@@ -90,6 +90,33 @@ icon
 
     .c-work__content {
         max-width: 880px;
-        margin: 0 auto;
+        margin: 37px auto 0;
+        display: flex;
+        border: 1px solid $primary;
+    }
+    .c-work__movie{
+        padding: 39px 1px 35px 41px;
+        width: 51.2%;
+        video {
+            height: 560px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .c-work__images{
+        width: 45%;
+        margin-top: 38px;
+        margin-bottom: 16px;
+        margin-right: 34px;
+        margin-left: 15px;
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        column-gap: 21px
+    }
+    .c-work__image{
+        width: 46.2%;
+        padding-bottom: 27px;
+        transform: translateX(3px);
     }
 }

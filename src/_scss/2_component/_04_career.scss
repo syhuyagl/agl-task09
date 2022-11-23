@@ -1,0 +1,27 @@
+/*------------------------------------------------------------
+form
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-career{
+    margin-top: 92px;
+    .c-career__heading{
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: $primary;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+    .c-career__subheading {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $gray;
+        text-align: center;
+        line-height: 1.7;
+        margin-top: 8px;
+        margin-top: 20px;
+        letter-spacing: 0.4px;
+    }
+        
+}

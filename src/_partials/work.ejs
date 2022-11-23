@@ -36,10 +36,10 @@
           <div class="c-work__images">
             <% if (typeof workImages != 'undefined') { %> 
                 <% workImages && workImages.url.forEach(url=> { %>
-                    <img src="<%= url.src %>" alt="Photos & Movie" ><% }) %> 
+                    <img class="c-work__image" src="<%= url.src %>" alt="Photos & Movie" ><% }) %> 
                 <% }
              %>
-          </div>
+          </div> 
         </div>
       </div>
   </section>

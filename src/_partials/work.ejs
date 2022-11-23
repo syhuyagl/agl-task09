@@ -1,0 +1,46 @@
+<section class="c-work">
+    <h2 class="c-work__heading">私たちの仕事</h2>
+    <h3 class="c-work__subheading">
+      エクステリアのプロ集団と言っても、仕事内容はさまざまです。<br>
+      仕事をしていく上で、「あなたの興味のあること」「向いていること」が見つけられるかもしれません。
+    </h3>
+    <div class="c-work__intro">
+      <div class="c-work__introcontent">
+        <div class="c-work__introimage">
+            <% if (typeof introImage != 'undefined') { %> 
+                <% introImage && introImage.url.forEach(url=> { %>
+                    <img src="<%= url.src %>" alt="仕事内容の紹介" ><% }) %> 
+                <% }
+             %>
+        </div>
+        <div class="c-work__introtext">
+          <p class="c-work__introtitle">仕事内容の紹介</p>
+          <span class="c-work__introsubtitle">
+            屋外での現場作業をメインに行ないます。
+          </span>
+          <div class="c-work__introitems">
+            <div class="c-work__introitem"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c-work__photos">
+        <p class="c-work__photosheading">Photos & Movie</p>
+        <h3 class="c-work__subheading">
+          私たちの仕事内容の一部を動画と写真でお伝えします。
+        </h3>
+        <div class="c-work__content">
+          <div class="c-work__movie">
+            <video src="./assets/movies/movie.mp4"></video>
+          </div>
+          <div class="c-work__images">
+            <% if (typeof workImages != 'undefined') { %> 
+                <% workImages && workImages.url.forEach(url=> { %>
+                    <img src="<%= url.src %>" alt="Photos & Movie" ><% }) %> 
+                <% }
+             %>
+          </div>
+        </div>
+      </div>
+  </section>
+  

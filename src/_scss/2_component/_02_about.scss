@@ -1,0 +1,96 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-about {
+    background: linear-gradient(90deg, #0080cc 76.7%, #fff 23.3%);
+    padding-bottom: 122px;
+
+    .c-about__title {
+        max-width: 960px;
+        width: 100%;
+        height: 95px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.6rem;
+        background-color: #fff;
+        letter-spacing: 1.8px;
+        line-height: 3.9;
+        transform: translateY(-96px);
+    }
+
+    .c-about__titlespan {
+        color: $orange;
+        display: inline-block;
+    }
+
+    .c-about__heading {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.2px;
+        color: #fff;
+    }
+
+    .c-about__description {
+        margin-top: 23px;
+    }
+
+    .c-about__descriptionitem {
+        font-size: 1.6rem;
+        max-width: 414px;
+        color: #fff;
+        line-height: 1.75;
+        letter-spacing: 0;
+    }
+
+    .c-about__text {
+        width: 50%;
+        margin-top: 13px;
+        padding-left: 120px;
+    }
+
+    .c-about__image {
+        width: 50%;
+    }
+
+    .c-about__content {
+        margin-top: 4px;
+        display: flex;
+    }
+
+    .c-about__image1 {
+        position: relative;
+    }
+
+    .c-about__image1::before {
+        content: "";
+        width: 89%;
+        display: block;
+        border: 2px solid #fff;
+        height: 356px;
+        left: -3%;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+    }
+
+    .c-about__image2 {
+        position: relative;
+        margin-top: 44px;   
+    }
+
+    .c-about__image2::before {
+        content: "";
+        width: 89%;
+        display: block;
+        border: 2px solid #fff;
+        height: 356px;
+        left: -3%;
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+    }
+}

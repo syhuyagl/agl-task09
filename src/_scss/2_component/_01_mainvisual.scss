@@ -1,0 +1,49 @@
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-mainvisual {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3px;
+    position: relative;
+
+    .c-mainvisual__slider {
+        width: 100%;
+    }
+
+    .c-mainvisual__heading {
+        position: absolute;
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        top: 28%;
+        letter-spacing: 2.7px;
+        left: 10%;
+    }
+
+    .c-mainvisual__heading1 {
+        display: block;
+        background-color: $primary;
+        width: fit-content;
+        padding-left: 8px;
+        margin-bottom: 10px;
+    }
+
+    .c-mainvisual__heading2 {
+        display: block;
+        margin-bottom: 10px;
+        width: fit-content;
+        padding-left: 8px;
+        background-color: $primary;
+    }
+
+    .c-mainvisual__heading3 {
+        display: block;
+        width: fit-content;
+        padding-left: 8px;
+        background-color: $primary;
+    }
+}

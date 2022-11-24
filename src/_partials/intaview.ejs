@@ -1,3 +1,19 @@
 <section class="c-intaview">
-
+  <h2 class="c-intaview__heading">先輩社員からのメッセージ</h2>
+  <p class="c-intaview__subheading">
+    未経験で入社した多くのメンバーが活躍しています。<br>
+    各部門で活躍する現役メンバーたちの「リアルな声」をお届けします。
+  </p>
+  <div class="c-intaview__cards">
+    <% if (typeof intaviewCards != 'undefined') { %> 
+        <% intaviewCards && intaviewCards.cards.forEach(card=> 
+            { %>
+            <div class="c-intaview__card">
+                <img src="<%= card.imgSrc %>" alt="<%= card.name %>">
+                <p class="c-intaview__message">`<%=card.msg%>`</p>
+            </div>
+            <% })%> 
+        <% }
+     %>
+  </div>
 </section>

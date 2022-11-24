@@ -26,23 +26,73 @@
             <p class="c-career__timeline">入社1年目</p>
             <p class="c-career__timelinetext">たくさんの現場を経験し、いろんな先輩社員と接することで、まずは一通り<br>の作業内容と現場作業の流れを把握します。</p>
         </div>
-        <div class="c-career__plancontent">
+        <div class="c-career__plancontent2">
             <p class="c-career__timeline">入社3年目</p>
-            <p class="c-career__timelinetext">1人で現場での作業を徐々に行います。</p>
+            <p class="c-career__timelinetext c-career__timelinetextadjust2">1人で現場での作業を徐々に行います。</p>
         </div>
-        <div class="c-career__plancontent">
+        <div class="c-career__plancontent3">
             <p class="c-career__timeline">入社5年目</p>
-            <p class="c-career__timelinetext">職長（現場での管理が出来る人）昇格に向けて必要な研修や資格を取得してもらい<br>ます。職長になると、現場でお客様との打合せや材料の注文、品質管理、工事写真<br>管理、原価管理といった管理業務も担います。</p>
+            <p class="c-career__timelinetext  c-career__timelinetextadjust3">職長（現場での管理が出来る人）昇格に向けて必要な研修や資格を取得して<br>もらいます。職長になると、現場でお客様との打合せや材料の注文、品質管<br>理、工事写真管理、原価管理といった管理業務も担います。</p>
         </div>
-        <div class="c-career__plancontent">
+        <div class="c-career__plancontent4">
             <p class="c-career__timeline">入社10年目〜 独立か、管理職か。</p>
-            <p class="c-career__timelinetext">独立を希望する人は、<br>
-                建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポートします。<br>独立後はENTEXから仕事を受注することも可能です。仕入先の紹介なども行ないます<br>ので、安心して独立できます。
-                <br>
+            <p class="c-career__timelinetext  c-career__timelinetextadjust4">独立を希望する人は、<br>
+                建築士や施工管理技術者への資格の取得、独立に向けての勉強までサポート<br>します。独立後はENTEXから仕事を受注することも可能です。仕入先の紹<br>介なども行ないますので、安心して独立できます。<br>
+                <br> 
                 独立を望まない人は、<br>
-                管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との工事打合<br>せの作業内容確認を行います。</p>
+                管理職となり職人の管理や他社が開催する会議へ参加したり、お客様との<br>工事打合せの作業内容確認を行います。</p>
+        </div>
+        <div class="c-career__timelinefooter">
+            <img class="c-career__leftdecor" src="./assets/img/timeline-1.png" alt="あなたは、どんな未来に向けてどんなキャリアで仕事をしたいですか？">
+            <img class="c-career__rightdecor" src="./assets/img/timeline-2.png" alt="あなたは、どんな未来に向けてどんなキャリアで仕事をしたいですか？">
+            <h4 class="c-career__timelineend">
+                あなたは、どんな未来に向けて<br>
+                どんなキャリアで仕事をしたいですか？
+            </h4>
+        </div>
+    </div>
+   <div class="c-career__service">
+    <div class="c-career__serviceimages">
+        <% if (typeof serviceImages != 'undefined') { %> 
+            <% serviceImages && serviceImages.url.forEach(url=> { %>
+                <img class="c-work__image" src="<%= url.src %>" alt="充実した福利厚生サービス" ><% }) %> 
+            <% }
+         %>
+    </div>
+    <div class="c-career__servicedescription">
+        <div class="c-career__servicetop">
+            <h3 class="c-career__servicetitletop">充実した福利厚生サービス</h3>
+            <dl>
+                <dt><span class="c-career__dot">●</span>遠方から弊社に入社される人は、ENTEX本社の上に社宅(社員<br>&#160;寮)があります。</dt>
+                <dd class="c-career__dd1"><span class="c-career__dot2">※</span>現在は満室のため、近くのワンルームから（自転車通勤圏内）通勤して<br>&#160;いただきます。</dd>
+                <dt><span class="c-career__dot">●</span>年1回社員旅行を開催(参加希望者のみ)</dt>
+                <dd class="c-career__dd2"><span class="c-career__dot2">※</span>社員旅行積立金3,000円（会社が旅費の半分以上を負担）</dd>
+                <dt class="c-career__dt3"><span class="c-career__dot">●</span>社会保険完備(雇用保険、労災保険、健康保険、厚生年金）</dt>
+                <dt class="c-career__dt4"><span class="c-career__dot">●</span>希望者参加型の食事会(費用は会社負担)</dt>
+                <dt class="c-career__dt5"><span class="c-career__dot">●</span>各種手当も充実</dt>
+                <dd class="c-career__ddsmall">・皆勤手当：5,000円</dd>
+                <dd class="c-career__ddsmall">・雨天手当：1,000円</dd>
+                <dd class="c-career__ddsmall">・固定休日手当：5日分（賃金単価による）</dd>
+                <dd class="c-career__ddsmall">・資格手当</dd>
+                <dd class="c-career__ddsmall">・残業、休日手当</dd>
+                <dd class="c-career__ddsmall">・技能手当</dd>
+                <dd class="c-career__ddsmall">・通勤手当：月3万円まで</dd>
+                <dt class="c-career__dt6"><span class="c-career__dot">●</span>昇給あり</dt>
+                <dt><span class="c-career__dot">●</span>賞与あり（夏・冬 年2回）</dt>
+            </dl>
+        </div>
+        <div class="c-career__servicebottom">
+            <h3 class="c-career__servicetitlebottom">独立支援制度も充実!20代でも独立可能</h3>
+            <dl>
+                <dt>独立支援制度</dt>
+                <dd>資格取得費用の援助</dd>
+                <dd>・座学（法律、行政への対応）の勉強支援</dd>
+                <dd>・仕入先の紹介</dd>
+                <dd>・顧問税理士、行政書士、弁護士の紹介</dd>
+            </dl>
         </div>
     </div>
    
+   </div>
 </section>
 

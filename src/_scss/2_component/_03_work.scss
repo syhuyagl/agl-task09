@@ -93,6 +93,9 @@ icon
         margin: 37px auto 0;
         display: flex;
         border: 1px solid $primary;
+        @include sp {
+            flex-direction: column;
+        }
     }
     .c-work__movie{
         padding: 39px 1px 35px 41px;
@@ -101,6 +104,10 @@ icon
             height: 560px;
             width: 100%;
             object-fit: cover;
+        }
+        @include sp {
+            width: 100%;
+            padding: 0 0;
         }
     }
     .c-work__images{
@@ -112,7 +119,12 @@ icon
         display: flex;
         flex: 1 1 auto;
         flex-wrap: wrap;
-        column-gap: 21px
+        column-gap: 21px;
+        @include sp {
+            width: 100%;
+        margin-left: 0;
+        }
+        
     }
     .c-work__image{
         width: 46.2%;

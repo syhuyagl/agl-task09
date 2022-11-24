@@ -78,5 +78,21 @@
         "alt": "仕事内容の紹介"
       }
     ]
+  },
+  "serviceImages":{
+      "url":[
+        {
+          "src": "./assets/img/service-1.png"
+        },
+        {
+          "src": "./assets/img/service-2.png"
+        },
+        {
+          "src": "./assets/img/service-3.png"
+        },
+        {
+          "src": "./assets/img/service-4.png"
+        }
+      ]
   }
 }

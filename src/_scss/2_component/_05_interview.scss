@@ -39,21 +39,27 @@ text
         position: absolute;
         bottom: 0;
         width: 100%;
+        max-width: 294px;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 18px 25px;
+        padding: 15px 19px;
+        left: 2%;
         bottom: -8.7%;
     }
     .c-intaview__playicon{
-        width: 17%;
+        width: 16.6%;
     }
     .c-intaview__cardtext{
-        width: 83%;
+        width: 83.4%;
     }
     .c-intaview__cardname{
+        font-size: 2rem;
+        color: #fff;
     }
     .c-intaview__cardposition{
+        font-size: 1.4rem;
+        color: #fff;
     }
     .c-intaview__message{
         max-width: 241px;
@@ -61,7 +67,33 @@ text
         font-weight: 600;
         padding-bottom: 50px;
         color: $primary;
-        margin: 16px auto 0 21px;
+        margin: 15px auto 1px 21px;
         letter-spacing: 0.3px;
+    }
+    .c-intaview__represent{
+        background-color: $primary;
+        color: #fff;
+    }
+    .c-intaview__representtitle{
+        font-size: 3.5rem;
+        font-weight: 500;
+    }
+    .c-intaview__representsubtitle{
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+    .c-intaview__representcontent{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    .c-intaview__representimage{
+
+    }
+    .c-intaview__representbody2{
+
+    }
+    .c-intaview__representadvise{
+        font-size: 2.5rem;
+        font-weight: 500;
     }
 }

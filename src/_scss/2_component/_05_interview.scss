@@ -32,5 +32,36 @@ text
     .c-intaview__card{
         width: 32.6%;
         border: 4px solid $primary;
+        position: relative;
+    }
+    .c-intaview__cardinfo{
+        background-color: $primary;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 25px;
+        bottom: -8.7%;
+    }
+    .c-intaview__playicon{
+        width: 17%;
+    }
+    .c-intaview__cardtext{
+        width: 83%;
+    }
+    .c-intaview__cardname{
+    }
+    .c-intaview__cardposition{
+    }
+    .c-intaview__message{
+        max-width: 241px;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 50px;
+        color: $primary;
+        margin: 16px auto 0 21px;
+        letter-spacing: 0.3px;
     }
 }

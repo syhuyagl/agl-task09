@@ -10,7 +10,16 @@
             { %>
             <div class="c-intaview__card">
                 <img src="<%= card.imgSrc %>" alt="<%= card.name %>">
-                <p class="c-intaview__message">`<%=card.msg%>`</p>
+                <p class="c-intaview__message"><%=card.msg%></p>
+                <div class="c-intaview__cardinfo">
+                  <div class="c-intaview__playicon">
+                    <img  src="./assets/img/icon-play.png" alt="">
+                  </div>
+                    <div class="c-intaview__cardtext">
+                        <h3 class="c-inateview__cardname"><%=card.name%></h3>
+                        <p class="c-intaview__cardposition"><%=card.des%></p>
+                    </div>
+                </div>
             </div>
             <% })%> 
         <% }

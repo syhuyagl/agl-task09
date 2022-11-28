@@ -4,96 +4,169 @@ text
 
 /*
 ------------------------------------------------------------*/
-.c-intaview{
-    .c-intaview__heading{
-        font-size: 4.4rem;
-        font-weight: 500;
-        color: $primary;
-        text-align: center;
-        letter-spacing: 3.2px;
-        margin-top: 90px;
-    }
-    .c-intaview__subheading{
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: $gray;
-        text-align: center;
-        line-height: 1.7;
-        margin-top: 4px;
-        letter-spacing: 0.3px;
-    }
-    .c-intaview__cards{
-        display: flex;
-        max-width: 960px;
-        margin: 54px auto 0;
-        width: 100%;
-        justify-content: space-between;
-    }
-    .c-intaview__card{
-        width: 32.6%;
-        border: 4px solid $primary;
-        position: relative;
-    }
-    .c-intaview__cardinfo{
-        background-color: $primary;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        max-width: 294px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 19px;
-        left: 2%;
-        bottom: -8.7%;
-    }
-    .c-intaview__playicon{
-        width: 16.6%;
-    }
-    .c-intaview__cardtext{
-        width: 83.4%;
-    }
-    .c-intaview__cardname{
-        font-size: 2rem;
-        color: #fff;
-    }
-    .c-intaview__cardposition{
-        font-size: 1.4rem;
-        color: #fff;
-    }
-    .c-intaview__message{
-        max-width: 241px;
-        font-size: 18px;
-        font-weight: 600;
-        padding-bottom: 50px;
-        color: $primary;
-        margin: 15px auto 1px 21px;
-        letter-spacing: 0.3px;
-    }
-    .c-intaview__represent{
-        background-color: $primary;
-        color: #fff;
-    }
-    .c-intaview__representtitle{
-        font-size: 3.5rem;
-        font-weight: 500;
-    }
-    .c-intaview__representsubtitle{
-        font-size: 2.4rem;
-        font-weight: 500;
-    }
-    .c-intaview__representcontent{
-        font-size: 1.6rem;
-        font-weight: 300;
-    }
-    .c-intaview__representimage{
-
-    }
-    .c-intaview__representbody2{
-
-    }
-    .c-intaview__representadvise{
-        font-size: 2.5rem;
-        font-weight: 500;
-    }
+.c-intaview {
+  .c-intaview__heading {
+    font-size: 4.4rem;
+    font-weight: 500;
+    color: $primary;
+    text-align: center;
+    letter-spacing: 3.2px;
+    margin-top: 90px;
+  }
+  .c-intaview__subheading {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $gray;
+    text-align: center;
+    line-height: 1.7;
+    margin-top: 4px;
+    letter-spacing: 0.3px;
+  }
+  .c-intaview__cards {
+    display: flex;
+    max-width: 960px;
+    margin: 54px auto 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .c-intaview__card {
+    width: 32.6%;
+    border: 4px solid $primary;
+    position: relative;
+  }
+  .c-intaview__cardinfo {
+    background-color: $primary;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 19px;
+    left: 2%;
+    bottom: -8.7%;
+  }
+  .c-intaview__playicon {
+    width: 16.6%;
+  }
+  .c-intaview__cardtext {
+    width: 83.4%;
+  }
+  .c-intaview__cardname {
+    font-size: 2rem;
+    color: #fff;
+  }
+  .c-intaview__cardposition {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .c-intaview__message {
+    max-width: 241px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 50px;
+    color: $primary;
+    margin: 15px auto 1px 21px;
+    letter-spacing: 0.3px;
+  }
+  .c-intaview__represent {
+    background-color: $primary;
+    color: #fff;
+    margin-top: 141px;
+    padding-bottom: 124px;
+  }
+  .c-intaview__respresentmain {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .c-intaview__representtitle {
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-top: 92px;
+    letter-spacing: 1px;
+  }
+  .c-intaview__representsubtitle {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 39px;
+    letter-spacing: 0.5px;
+  }
+  .c-intaview__representcontent {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 28px;
+    letter-spacing: 0.4px;
+    line-height: 1.75;
+  }
+  .c-intaview__representbody {
+    display: flex;
+    justify-content: space-between;
+  }
+  .c-intaview__representimage {
+    margin-top: -35px;
+  }
+  .c-intaview__representbody2 {
+  }
+  .c-intaview__representadvise {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 31px;
+    letter-spacing: -0.5px;
+    line-height: 1.8;
+  }
+  .c-intaview__representsign{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: 23px;
+    letter-spacing: 0.6px;
+  }
+  .c-intaview__representbottitle{
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-top: 47px;
+    letter-spacing: 2.3px;
+  }
+  .c-intaview__representfooter{
+    display: flex;
+    max-width: 880px;
+    margin: 44px auto 0;
+    justify-content: space-between;
+  }
+  .c-intaview__representlogo{
+    width: 42.7%;
+  }
+  .c-intaview__representcontact{
+    width: 57.3%;
+    margin-top: -6px;
+  }
+  .c-intaview__representcontactitem{
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: 500;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .c-intaview__contacten{
+    letter-spacing: 0.4px;
+  }
+  .c-intaview__contactlang{
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .c-intaview__contactlang::after{
+    content: "";
+    position: absolute;
+    width: 62px ;
+    height: 1px;
+    background: #fff;
+    left: 54px;
+    top: 18px;
+  }
+  .c-intaview__contactitem2{
+    max-width: 346px;
+  }
+  .c-intaview__contacten3{
+    transform: translateX(-36px);
+  }
 }

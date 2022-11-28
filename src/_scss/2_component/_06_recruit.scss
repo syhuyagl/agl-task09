@@ -45,24 +45,102 @@ navi
     }
     .c-recruit__tabcontent{
         background-color: #F2F5F7 ;
-        padding: 49px 30px;
+        padding: 59px 38px 57px;
         border: 3px solid $primary;
         table{
             width: 100%;
+            border-collapse: collapse; 
+        }
+        tr{
+            border-bottom: 1px solid #707070;
         }
         th {
             font-size: 2rem;
             font-weight: 600;
             width: 29%;
-            padding-left: 65px;
+            padding-left: 59px;
             text-align: start;
+            vertical-align: top;
         }
         td{
+
             font-size: 1.6rem;
             font-weight: 400;
             letter-spacing: 0.5px;
             width: 71%;
-            
+            line-height: 1.76;
+        }
+    }
+    .c-recruit__firsttd{
+        line-height: 0 !important;
+    }
+    .c-recruit__firstrow{
+        padding-bottom: 18px !important;
+        border-bottom: 5px solid $primary;
+    }
+    .c-recruit__othersth{
+        padding-top: 20px;
+        padding-bottom: 17px;
+    }
+    .c-recruit__otherstd{
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+    .c-recruit__tableactions{
+        display: flex;
+        max-width: 742px;
+        margin: 44px auto 0;
+        justify-content: space-between;
+    }
+    .c-recruit__tableaction{
+        display:  flex;
+        font-size: 2.2rem;
+        font-weight: 400;
+        width: 47.7%;
+        padding: 16px 33px;
+        background: $primary;
+        justify-content: space-between;
+        color: #Fff;
+        border-radius: 9px;
+    }
+    .c-recruit__assignmenticon{
+        width: 11%;
+    }
+    .c-recruit__assignmenttext{
+        width: 85%;
+    }
+    .c-recruit__tableaction1{
+        margin-left: 36px;
+    }
+    .c-recruit__about{
+        padding-top: 49px;
+        table{
+            width: 100%;
+            border-collapse: collapse; 
+            border: 1px solid #CBCBCB;
+        }
+        tr{
+            border-bottom: 1px solid #CBCBCB ;
+        }
+        th {
+            font-size: 1.6rem;
+            font-weight: 400;
+            background: #F7F7F7;
+            width: 30%;
+            text-align: start; 
+            padding-left: 18px;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+        td{
+            border: 1px solid #CBCBCB ;
+            font-size: 1.6rem;
+            font-weight: 400;
+            width: 71%;
+            line-height: 1.76;
+            padding-top: 15px;
+            padding-left: 19px;
+            padding-bottom: 11px;
         }
     }
     .is-active {

@@ -4,15 +4,15 @@
     <ul>
       <% if (typeof linklists != 'undefined') { %>
         <% linklists.main && linklists.main.forEach(link => { %>
-          <li class="c-header__gnavitem u-primary">
-            <a <% if (link.current || link.active) { %>class="is-active"<% } %> href="<%= link.url %>"><%= link.title %></a>
+          <li <% if(link.class) {%>class="c-header__gnavitem u-primary <%=link.class%>" <%}  %>  >
+            <a><%= link.title %></a>
           </li>
         <% }) %>
       <% } %>
     </ul>
   </nav>
   <a href="#" class="c-header__assignment">
-        <img src="./assets/img/assignment.png" alt="募集要項">
+        <img src="./assets/img/assignment.svg" alt="募集要項">
         <span>募集要項</span>
   </a>
 </header>

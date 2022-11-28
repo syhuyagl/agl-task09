@@ -2,8 +2,107 @@
 footer
 ------------------------------------------------------------*/
 .c-footer {
-    padding: 20px;
-    background: #051a2b;
-    color: #fff;
+  color: #fff;
+  text-align: center;
+  border-top: 1px solid $primary;
+  .c-footer__nav{
+    display: flex;
+    margin-top: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 21px 16px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  .c-gnav {
+    margin: 7px auto 0;
+    flex: 1 1 auto;
+    max-width: 721px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      display: inline-block;
+    }
+  }
+  .c-header__firstitem {
+    margin-left: 89px;
+  }
+  .c-header__seconditem {
+    margin-left: -7px;
+    transform: translateX(13px);
+  }
+  .c-header__thirditem {
+    margin-left: 20px;
+  }
+  .c-footer__logo {
+    padding-top: 11px;
+    padding-bottom: 6px;
+  }
+
+  .c-footer__gnavitem {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+  }
+  .c-footer__gnavitem:hover {
+    cursor: pointer;
+  }
+  .is-active {
+    a {
+      border-bottom: 2px solid $primary;
+      padding-bottom: 6px;
+    }
+  }
+  .c-footer__assignment {
+    margin-top: 4px;
+    transform: translateX(1px);
+    background-color: $primary;
+    border-radius: 9px;
+    font-size: 1.8rem;
+    width: 185px;
     text-align: center;
+    height: 50px;
+    color: #fff;
+    img {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 32%;
+      left: -5px;
+    }
+
+    span {
+      display: inline-block;
+      padding-top: 12px;
+      letter-spacing: 2.3px;
+      margin-left: -2px;
+    }
+  }
+  .c-footer__externalsite{
+    border-top: 1px solid #EFEFEF ;
+  }
+  .c-footer__link{
+    margin-top: 12px;
+    max-width: 370px;
+    display: block;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    font-weight: 400;
+    margin-left: auto;
+    color: #A0A0A0;
+    letter-spacing: 0.3px;
+    margin-bottom: 14px;
+  }
+  .c-footer__copyright{
+    background-color: $primary;
+    color: #fff;
+    padding: 13px 21px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  
 }

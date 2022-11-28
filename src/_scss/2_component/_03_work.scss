@@ -133,4 +133,12 @@ icon
     .c-work__image:nth-of-type(2n+1){
         margin-right: 21px;
     }
+    .c-work__itemindex{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .c-work__itemtext {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
 }

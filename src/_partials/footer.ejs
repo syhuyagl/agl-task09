@@ -1,5 +1,26 @@
 <footer class="c-footer">
-  <div class="l-container">
-    ©2019 ALLGROW LABO Inc.
+  <div class="c-footer__nav">
+     <h1 class="c-footer__logo"><a href="<%= BASE_URL %>index.html"><img src="./assets/img/logo.png" alt="Logo"></a></h1>
+    <nav class="c-gnav">
+      <ul>
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li <% if(link.class) {%>class="c-footer__gnavitem u-primary <%=link.class%>" <%}  %>  >
+              <a><%= link.title %></a>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>
+    </nav>
+    <a href="#" class="c-footer__assignment">
+        <img src="./assets/img/assignment.svg" alt="募集要項">
+        <span>募集要項</span>
+    </a>
+  </div>
+  <div class="c-footer__externalsite">
+    <a class="c-footer__link" href="#" target="_blank">> 株式会社ENTEXコーポレートサイト</a>
+  </div>
+  <div class="c-footer__copyright">
+    ©  株式会社ENTEX. All rights reserved.
   </div>
 </footer>

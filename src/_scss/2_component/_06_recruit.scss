@@ -7,6 +7,7 @@ navi
 .c-recruit  {
     max-width: 960px;
     margin: 0 auto;
+    padding-bottom: 62px;
     .c-recruit__firstheading{
         text-align: center;
         font-size: 4.4rem;
@@ -141,6 +142,9 @@ navi
             padding-top: 15px;
             padding-left: 19px;
             padding-bottom: 11px;
+            ul{
+            line-height: 1.83;
+            }
         }
     }
     .is-active {

@@ -3,23 +3,29 @@
     "main": [
       {
         "title": "私たちについて",
-        "url": "/about"
+        "url": "/about",
+        "class": "c-header__firstitem"
       },
       {
         "title": "私たちの仕事 ",
-        "url": "/work"
+        "url": "/work",
+        "class": "c-header__seconditem"
+
       },
       {
         "title": "キャリアプラン",
-        "url": "/career"
+        "url": "/career",
+        "class": "c-header__thirditem"
       },
       {
         "title": "社員インタビュー",
-        "url": "/intaview"
+        "url": "/intaview",
+        "class": "c-header__fourthitem"
       },
       {
-        "title": "会社情報v",
-        "url": "/company"
+        "title": "会社情報",
+        "url": "/company",
+        "class": "c-header__fifthitem"
       }
     ]
   },

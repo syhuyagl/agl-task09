@@ -6,3 +6,11 @@ $(document).ready(function(){
         variableWidth: true,
     });
   });
+
+  
+$('.c-gnav li').hover(function(){
+      $(this).addClass('is-active').siblings().removeClass('is-active');
+})
+$('.c-gnav li').click(function(){
+    $(this).addClass('is-active').siblings().removeClass('is-active');
+})

@@ -13,6 +13,9 @@ icon
         color: $primary;
         text-align: center;
         letter-spacing: 2px;
+        @include sp {
+            font-size: 2.4rem;
+        }
     }
 
     .c-work__subheading {
@@ -23,6 +26,9 @@ icon
         line-height: 1.7;
         margin-top: 8px;
         letter-spacing: 0.4px;
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
     .c-work__subheading2 {
         font-size: 1.6rem;
@@ -32,6 +38,9 @@ icon
         line-height: 1.7;
         margin-top: 10px;
         letter-spacing: 0.4px;
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
     .c-work__intro {
         margin-top: 60px;
@@ -41,6 +50,9 @@ icon
 
     .c-work__introcontent {
         display: flex;
+        @include sp {
+            flex-direction: column;
+        }
     }
 
     .c-work__introimage {
@@ -60,6 +72,9 @@ icon
         margin-left: 41px;
         margin-top: 93px;
         letter-spacing: 2px;
+        @include sp {
+            font-size: 2.4rem;
+        }
     }
 
     .c-work__introsubtitle {
@@ -70,6 +85,9 @@ icon
         margin-top: 10px;
         display: inline-block;
         letter-spacing: 0.3px;
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
     .c-work__introitems {
         margin-top: 31px;
@@ -91,7 +109,9 @@ icon
         letter-spacing: 0.5px;
         border: 1px solid $primary;
         width: 100%;
-        
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
     .c-work__introitem{
         display: flex;
@@ -149,12 +169,18 @@ icon
         color: $primary;
         letter-spacing: 1.77px;
         text-align: center;
+        @include sp {
+            font-size: 2.4rem;
+        }
     }
 
     .c-work__photosubheading {
         font-size: 1.6rem;
         font-weight: 400;
         color: $gray;
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
 
     .c-work__content {

@@ -7,9 +7,18 @@
 <!-- @content -->
 <section class="c-mainvisual">
     <div class="c-mainvisual__slider">
-        <img src="./assets/img/slider-1.jpg" alt="">
-        <img src="./assets/img/slider-2.jpg" alt="">
-        <img src="./assets/img/slider-3.jpg" alt="">
+        <picture>
+          <source media="(max-width:767px)" srcset="./assets/img/slider-sp.jpg">
+         <img src="./assets/img/slider-1.jpg" alt="">
+        </picture>
+        <picture>
+          <source media="(max-width:767px)" srcset="./assets/img/slider-sp.jpg">
+          <img src="./assets/img/slider-2.jpg" alt=""> 
+        </picture>
+        <picture>
+          <source media="(max-width:767px)" srcset="./assets/img/slider-sp.jpg">
+          <img src="./assets/img/slider-3.jpg" alt="">
+        </picture>
     </div>
     <h1 class="c-mainvisual__heading">
       <span class="c-mainvisual__heading1">  

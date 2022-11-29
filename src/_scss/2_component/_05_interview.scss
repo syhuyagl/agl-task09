@@ -156,19 +156,31 @@ text
     font-weight: 500;
     margin-top: 47px;
     letter-spacing: 2.3px;
+    @include sp {
+      font-size: 2.4rem ;
+    }
   }
   .c-intaview__representfooter {
     display: flex;
     max-width: 880px;
     margin: 44px auto 0;
     justify-content: space-between;
+    @include sp {
+      flex-direction: column;
+    }
   }
   .c-intaview__representlogo {
     width: 42.7%;
+    @include sp {
+      width: 100%;
+    }
   }
   .c-intaview__representcontact {
     width: 57.3%;
     margin-top: -6px;
+    @include sp {
+      width: 100%;
+    }
   }
   .c-intaview__representcontactitem {
     display: flex;
@@ -179,10 +191,18 @@ text
   }
   .c-intaview__contacten {
     letter-spacing: 0.4px;
+    @include sp {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
   }
   .c-intaview__contactlang {
     letter-spacing: 2px;
     position: relative;
+    @include sp {
+      font-size: 2rem;
+      font-weight: 500;
+    }
   }
   .c-intaview__contactlang::after {
     content: "";

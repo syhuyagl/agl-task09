@@ -9,7 +9,13 @@
         <% intaviewCards && intaviewCards.cards.forEach(card=> 
             { %>
             <div class="c-intaview__card">
-                <img src="<%= card.imgSrc %>" alt="<%= card.name %>">
+                <div class="c-intaview__cardimage">
+                  <img src="<%= card.imgSrc %>" alt="<%= card.name %>">
+                  <div class="c-intaview__zoom">
+                      <img class="c-intaview__zoomin" src="./assets/img/zoom_in.svg" alt="<%=card.name %>">
+                      <span class="c-intaview__zoomtitle">INTERVIEW</span>
+                </div>
+                </div>
                 <p class="c-intaview__message"><%=card.msg%></p>
                 <div class="c-intaview__cardinfo">
                   <div class="c-intaview__playicon">
@@ -85,5 +91,32 @@
       </div>
   </div>
 </div>
-
+<div class="c-intaview__modal ">
+    <div class="c-intaview__modalmain">
+        <p class="c-intaview__modaltitle">いつも明るく元気に作業。朝も一番に出勤してます！</p>
+        <div class="c-intaview__modalcontent">
+          <div class="c-intaview__modalcard">
+            <div class="c-intaview__modalcardimage">
+              <img src="./assets/img/interviewmodal-1.jpg" alt="">
+            </div>
+            <div class="c-intaview__modalcardname">
+                <p class="c-intaview__modalname">安川　聖 (30)</p>
+                <p class="c-intaview__modalposition">入社2年目・外構担当職人</p>
+            </div>
+          </div>
+          <div class="c-intaview__modalqa">
+            <dl>
+              <dt>Q. <span>仕事内容について教えてください</span></dt>
+              <dd>外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチシャッター、フェンス、テラスなど、大小様々な工事を行っています。</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="c-button">
+          <div class="c-button__icon">
+            <img src="./assets/img/close.svg" alt="">
+          </div>
+            <span class="c-button__text">閉じる</span>
+        </div>
+    </div>
+  </div>
 </section>

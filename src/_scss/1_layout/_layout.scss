@@ -6,6 +6,7 @@ body {
     min-width: 320px;
     line-height: 1.5;
     font-weight: 400;
+    position: relative;
     @include sp {
         min-width: 320px;
     }
@@ -23,3 +24,9 @@ section {
   
 }
 //-------------------------------------------------------
+.is-show{
+    display: block;
+}
+.is-close{
+    display: none;
+}

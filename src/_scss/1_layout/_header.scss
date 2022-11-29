@@ -38,12 +38,18 @@
     .c-header__gnavitem {
         font-size: 1.6rem;
         text-transform: capitalize;
-       
+               
     }
     .c-header__gnavitem:hover{
         cursor: pointer;
     }
     .is-active{
+        a{
+            border-bottom: 2px solid $primary;
+            padding-bottom: 6px
+        }
+    }
+    .is-hover{
         a{
             border-bottom: 2px solid $primary;
             padding-bottom: 6px

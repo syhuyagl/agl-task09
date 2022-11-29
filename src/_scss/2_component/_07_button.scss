@@ -1,0 +1,33 @@
+/*------------------------------------------------------------
+img
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+
+
+.c-button{
+    width: fit-content;
+    display: flex;
+    background: $primary;
+    align-items: center;
+    border-radius: 9px;
+    padding: 8px 28px 2px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.4s;
+    &:hover{
+        opacity: 0.7;
+        transition: 0.4s;
+    }
+    .c-button__text{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.9;
+        letter-spacing: -2px;
+    }
+    .c-button__icon{
+        transform: translate(-6px, -3px);
+    }
+}

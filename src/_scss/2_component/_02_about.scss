@@ -18,10 +18,10 @@ title
         font-size: 2.6rem;
         background-color: #fff;
         letter-spacing: 1.8px;
+        color: $primary;
         line-height: 3.9;
         transform: translateY(-96px);
     }
-
     .c-about__titlespan {
         color: $orange;
         display: inline-block;
@@ -43,7 +43,7 @@ title
         max-width: 414px;
         color: #fff;
         line-height: 1.75;
-        letter-spacing: 0;
+        letter-spacing: 0.3px;
     }
 
     .c-about__text {

@@ -30,3 +30,15 @@ section {
 .is-close{
     display: none;
 }
+.is-fixed{
+    overflow: hidden;
+}
+.is-pc{
+    display: block;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: none;
+    }
+}

@@ -10,7 +10,6 @@
         "title": "私たちの仕事 ",
         "url": "/work",
         "class": "c-header__seconditem"
-
       },
       {
         "title": "キャリアプラン",
@@ -29,7 +28,7 @@
       }
     ]
   },
-  "introImage":{
+  "introImage": {
     "url": [
       {
         "src": "./assets/img/intro-1.jpg",
@@ -49,8 +48,8 @@
       }
     ]
   },
-  "workImages":{
-    "url":[
+  "workImages": {
+    "url": [
       {
         "src": "./assets/img/work-1.jpg",
         "alt": "Photos & Movie"
@@ -85,41 +84,68 @@
       }
     ]
   },
-  "serviceImages":{
-      "url":[
-        {
-          "src": "./assets/img/service-1.png"
-        },
-        {
-          "src": "./assets/img/service-2.png"
-        },
-        {
-          "src": "./assets/img/service-3.png"
-        },
-        {
-          "src": "./assets/img/service-4.png"
-        }
-      ]
+  "serviceImages": {
+    "url": [
+      {
+        "src": "./assets/img/service-1.png"
+      },
+      {
+        "src": "./assets/img/service-2.png"
+      },
+      {
+        "src": "./assets/img/service-3.png"
+      },
+      {
+        "src": "./assets/img/service-4.png"
+      }
+    ]
   },
-  "intaviewCards":{
-    "cards":[
+  "intaviewCards": {
+    "cards": [
       {
         "imgSrc": "./assets/img/interview-1.jpg",
         "msg": "いつも明るく元気に作業。朝も一番に出勤してます！",
         "name": "安川　聖 (30)",
-        "des":"入社2年目・外構担当職人　"
+        "des": "入社2年目・外構担当職人　"
       },
       {
         "imgSrc": "./assets/img/interview-2.jpg",
         "msg": "職長として土木・外構工事の現場管理をしながら作業指示",
         "name": "福元　和稔 (45)",
-        "des":"入社3年目・土木、外構担当職長　"
+        "des": "入社3年目・土木、外構担当職長　"
       },
       {
         "imgSrc": "./assets/img/interview-3.jpg",
         "msg": "高校卒業後に入社し、関西で妻と出会い結婚。外構部長へ",
         "name": "工藤　智成(41)",
-        "des":"入社23年目・外構部長　"
+        "des": "入社23年目・外構部長　"
+      }
+    ]
+  },
+  "modalData": {
+    "modal": [
+      {
+        "title": "いつも明るく元気に作業。朝も一番に出勤してます！",
+        "name": "安川　聖 (30)",
+        "des": "入社2年目・外構担当職人　",
+        "qas": [
+          {
+            "question": "Q. 仕事内容について教えてください",
+            "answer": "外構工事を担当しています。建物を新しく建てる際やお庭のリフォームを検討されてる方をはじめ、カーポート、ウッドデッキ、ブロック塀、門扉、アプローチ　シャッター、フェンス、テラスなど、大小様々な工事を行っています。"
+          },
+          {
+            "question": "Q. 入社の決め手について教えてください",
+            "answer": "もともとは営業や飲食業、アパレル関係の仕事をしていましたが、何か手に職をつけたいと思い、ENTEXに応募しました。"
+          },
+          {
+            "question": "Q. 仕事でやりがいを感じるときはどんな時ですか？",
+            "answer": "入社2年目ということもあり、作業中などはあまり余裕を感じることはありませんが、現場の着工前と完成後を見るとやりがいを感じます。また、完成後に自分が携わった現場を通りかかり、そこに住むひとたちが何気ない生活を送っている姿を見るのもやりがいを感じます。私たちの仕事は、世の中に残っていく仕事です。"
+          },
+          {
+            "question": "Q. 入社を希望される方に向けてメッセージをお願いします",
+            "answer": "はっきり言って肉体労働では重いものを運びますし、夏は暑く、冬は寒いです。仕事自体は難しいですが、体力が無くても、不器用でも、信念をもって取り組めばこの仕事は務まると思います。そんな信念のあるひとを私たちはお待ちしています。"
+          }
+        ]
       }
     ]
   }

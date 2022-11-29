@@ -24,7 +24,15 @@ icon
         margin-top: 8px;
         letter-spacing: 0.4px;
     }
-
+    .c-work__subheading2 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: $gray;
+        text-align: center;
+        line-height: 1.7;
+        margin-top: 10px;
+        letter-spacing: 0.4px;
+    }
     .c-work__intro {
         margin-top: 60px;
         width: 90%;
@@ -139,7 +147,7 @@ icon
         font-size: 3.4rem;
         font-weight: 500;
         color: $primary;
-        letter-spacing: 2px;
+        letter-spacing: 1.77px;
         text-align: center;
     }
 
@@ -151,7 +159,7 @@ icon
 
     .c-work__content {
         max-width: 880px;
-        margin: 37px auto 0;
+        margin: 34px auto 0;
         display: flex;
         border: 1px solid $primary;
         @include sp {

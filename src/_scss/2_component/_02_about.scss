@@ -8,30 +8,55 @@ title
 .c-about {
     background: linear-gradient(90deg, #0080cc 76.7%, #fff 23.3%);
     padding-bottom: 122px;
-
+    @include sp {
+            background: linear-gradient(90deg, #0080cc 98.7%, #fff 11.3%);
+    }
     .c-about__title {
         max-width: 960px;
         width: 100%;
-        height: 95px;
         margin: 0 auto;
         text-align: center;
+        padding: 32px 30px 24px;
         font-size: 2.6rem;
         background-color: #fff;
+        position: relative;
         letter-spacing: 1.8px;
         color: $primary;
-        line-height: 3.9;
         transform: translateY(-96px);
+        &::after{
+            content: "";
+            width: 2px;
+            height: 30px;
+            background: $primary;
+            position: absolute ;
+            left: 50%;
+            top: -14%;
+        }
+        @include sp {
+            font-size: 1.8rem;
+        }
     }
     .c-about__titlespan {
         color: $orange;
         display: inline-block;
     }
-
+    .c-about__scroll{
+        font-size: 2rem;
+        font-weight: 500;
+        color: $primary;
+        position: absolute;
+        left: 45.8%;
+    top: -57%;
+    letter-spacing: 0.3px;
+    }
     .c-about__heading {
         font-size: 3.4rem;
         font-weight: 500;
         letter-spacing: 2.2px;
         color: #fff;
+        @include sp {
+            font-size: 2.4rem;
+        }
     }
 
     .c-about__description {
@@ -44,22 +69,34 @@ title
         color: #fff;
         line-height: 1.75;
         letter-spacing: 0.3px;
+        @include sp {
+            font-size: 1.4rem;
+        }
     }
 
     .c-about__text {
         width: 50%;
         margin-top: 13px;
         padding-left: 120px;
+        @include sp {
+            width: 100%;
+        padding-left: 0px;
+        }
     }
 
     .c-about__image {
         width: 50%;
+        @include sp {
+            width: 100%;
+        }
     }
 
     .c-about__content {
         margin-top: 4px;
         display: flex;
-       
+       @include sp {
+        flex-direction: column-reverse;
+       }
     }
 
     .c-about__image1 {

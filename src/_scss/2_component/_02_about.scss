@@ -9,6 +9,7 @@ title
   padding-bottom: 122px;
   @include sp {
     background: linear-gradient(90deg, #0080cc 97.3%, #fff 12.7%);
+    padding-bottom: 54px;
   }
   .c-about__title {
     max-width: 960px;
@@ -69,11 +70,15 @@ title
     color: #fff;
     @include sp {
       font-size: 2.4rem;
+      letter-spacing: 1.3px;
     }
   }
 
   .c-about__description {
     margin-top: 23px;
+    @include sp {
+      margin-top: 9px;
+    }
   }
 
   .c-about__descriptionitem {
@@ -84,6 +89,7 @@ title
     letter-spacing: 0.3px;
     @include sp {
       font-size: 1.4rem;
+      line-height: 1.58;
     }
   }
 
@@ -93,6 +99,7 @@ title
     padding-left: 120px;
     @include sp {
       width: 100%;
+      margin-top: 43px;
       padding-left: 0px;
     }
   }

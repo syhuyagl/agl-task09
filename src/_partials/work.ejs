@@ -1,15 +1,21 @@
 <section class="c-work">
     <h2 class="c-work__heading">私たちの仕事</h2>
     <h3 class="c-work__subheading">
-      エクステリアのプロ集団と言っても、仕事内容はさまざまです。<br>
-      仕事をしていく上で、「あなたの興味のあること」「向いていること」が見つけられるかもしれません。
+      エクステリアのプロ集団と言っても、<br class="is-sp">仕事内容はさまざまです。<br>
+      仕事をしていく上で、「あなたの興味のあること」<br class="is-sp"><span class="is-pc">「向いていること」が見つけられるかもしれません。</span>
     </h3>
     <div class="c-work__intro">
       <div class="c-work__introcontent">
-        <div class="c-work__introimage">
+        <div class="c-work__introimages">
             <% if (typeof introImage != 'undefined') { %> 
                 <% introImage && introImage.url.forEach(url=> { %>
-                    <img src="<%= url.src %>" alt="仕事内容の紹介" ><% }) %> 
+                  <div class="c-work__introimage">
+                    <picture>
+                      <source srcset="<%= url.srcSp %>" media="(max-width: 767px)">
+                      <img src="<%= url.src %>" alt="仕事内容の紹介" >
+                    </picture>
+                  </div>
+                   <% }) %> 
                 <% }
              %>
         </div>
@@ -25,7 +31,7 @@
             </div>
             <div class="c-work__introitem c-work__introitem2">
               <span class="c-work__itemindex">2</span>
-              <p class="c-work__itemtext"> ブロック積み、フェンス、カーポート、門扉、照明、ポ<br>スト、表札と言われる金物商品の取付工事</p>
+              <p class="c-work__itemtext"> ブロック積み、フェンス、カーポート、門扉、照明、ポ<br class="is-pc">スト、表札と言われる金物商品の取付工事</p>
             </div>
             <div class="c-work__introitem c-work__introitem3">
               <span class="c-work__itemindex">3</span>
@@ -57,7 +63,7 @@
     </div>
     <div class="c-work__photos">
         <p class="c-work__photosheading">Photos & Movie</p>
-        <h3 class="c-work__subheading2">私たちの仕事内容の一部を動画と写真でお伝えします。</h3>
+        <h3 class="c-work__subheading2">私たちの仕事内容の一部を<br class="is-sp">動画と写真でお伝えします。</h3>
         <div class="c-work__content">
           <div class="c-work__movie">
             <video src="./assets/movies/movie.mp4"></video>

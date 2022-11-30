@@ -42,3 +42,9 @@ section {
         display: none;
     }
 }
+.is-sp{
+    display: none;
+    @include sp {
+        display: block;
+    }
+}

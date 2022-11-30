@@ -32,19 +32,23 @@
     "url": [
       {
         "src": "./assets/img/intro-1.jpg",
-        "alt": "仕事内容の紹介"
+        "alt": "仕事内容の紹介",
+        "srcSp": "./assets/img/intro-1-sp.jpg"
       },
       {
         "src": "./assets/img/intro-2.jpg",
-        "alt": "仕事内容の紹介"
+        "alt": "仕事内容の紹介",
+        "srcSp": "./assets/img/intro-2-sp.jpg"
       },
       {
         "src": "./assets/img/intro-3.jpg",
-        "alt": "仕事内容の紹介"
+        "alt": "仕事内容の紹介",
+        "srcSp": "./assets/img/intro-3-sp.jpg"
       },
       {
         "src": "./assets/img/intro-4.jpg",
-        "alt": "仕事内容の紹介"
+        "alt": "仕事内容の紹介",
+        "srcSp": "./assets/img/intro-4-sp.jpg"
       }
     ]
   },

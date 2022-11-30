@@ -9,14 +9,19 @@
         <% intaviewCards && intaviewCards.cards.forEach(card=> 
             { %>
             <div class="c-intaview__card">
+              <div class="c-intaview__spcard">
                 <div class="c-intaview__cardimage">
-                  <img src="<%= card.imgSrc %>" alt="<%= card.name %>">
+                    <picture>
+                      <source srcset="<%= card.imgSp %>" media="(max-width: 767px)">
+                      <img src="<%= card.imgSrc %>" alt="<%= card.name %>">
+                    </picture>
                   <div class="c-intaview__zoom">
                       <img class="c-intaview__zoomin" src="./assets/img/zoom_in.svg" alt="<%=card.name %>">
                       <span class="c-intaview__zoomtitle">INTERVIEW</span>
-                </div>
+                  </div>
                 </div>
                 <p class="c-intaview__message"><%=card.msg%></p>
+              </div>
                 <div class="c-intaview__cardinfo">
                   <div class="c-intaview__playicon">
                     <img  src="./assets/img/icon-play.png" alt="">

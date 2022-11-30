@@ -73,7 +73,9 @@ icon
     }
   }
   .c-work__introimage {
-    width: 50%;
+    @include sp {
+        width: 50%;
+    }
   }
   .c-work__introtext {
     background-color: #eff3f5;
@@ -277,6 +279,7 @@ icon
     border: 1px solid $primary;
     @include sp {
       flex-direction: column;
+      margin: 32px auto 0;
       max-width: 354px;
     }
   }
@@ -290,9 +293,9 @@ icon
     }
     @include sp {
         width: 100%;
-        padding: 8px 8px;
+        padding: 8px 8px 6px;
         video {
-            height: 449px;
+            height: 451px;
           }
     }
   }

@@ -79,7 +79,7 @@ text
       width: 19.6%;
       padding-top: 3px;
       padding-left: 14px;
-      img{
+      img {
         width: 19px;
       }
     }
@@ -123,6 +123,10 @@ text
     color: #fff;
     margin-top: 141px;
     padding-bottom: 124px;
+    @include sp {
+      margin-top: 25px;
+      padding-left: 20px;
+    }
   }
   .c-intaview__respresentmain {
     max-width: 960px;
@@ -135,6 +139,7 @@ text
     letter-spacing: 1px;
     @include sp {
       font-size: 2.4rem;
+      padding-top: 34px;
     }
   }
   .c-intaview__representsubtitle {
@@ -144,6 +149,8 @@ text
     letter-spacing: 0.5px;
     @include sp {
       font-size: 2rem;
+      margin-top: 30px;
+      margin-left: -12px;
     }
   }
   .c-intaview__representcontent {
@@ -153,15 +160,43 @@ text
     letter-spacing: 0.4px;
     line-height: 1.75;
     @include sp {
+      width: 96%;
       font-size: 1.4rem;
+      margin-top: 30px;
+      letter-spacing: 0.3px;
+      line-height: 1.6;
+    }
+  }
+  .c-intaview__representsp {
+    @include sp {
+      margin-top: 8px;
+
+      display: inline-block;
+    }
+  }
+  .c-intaview__representsp2 {
+    @include sp {
+      margin-top: 8px;
+      display: inline-block;
     }
   }
   .c-intaview__representbody {
     display: flex;
     justify-content: space-between;
+    @include sp {
+      flex-direction: column;
+    }
   }
   .c-intaview__representimage {
     margin-top: -35px;
+    @include sp {
+      text-align: center;
+      margin-top: 36px;
+      margin-left: -5.6%;
+      img {
+        width: 240px;
+      }
+    }
   }
   .c-intaview__representbody2 {
   }
@@ -173,6 +208,9 @@ text
     line-height: 1.8;
     @include sp {
       font-size: 1.6rem;
+      margin-top: 15px;
+      letter-spacing: 0px;
+      line-height: 1.68;
     }
   }
   .c-intaview__representsign {

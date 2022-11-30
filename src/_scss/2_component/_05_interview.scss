@@ -114,7 +114,7 @@ text
       font-size: 1.4rem;
       width: 58%;
       padding-left: 12px;
-      padding-top: 28px;
+      padding-top: 69px;
       margin: 0 0;
     }
   }
@@ -126,6 +126,7 @@ text
     @include sp {
       margin-top: 25px;
       padding-left: 20px;
+      padding-bottom: 22px;
     }
   }
   .c-intaview__respresentmain {
@@ -211,6 +212,7 @@ text
       margin-top: 15px;
       letter-spacing: 0px;
       line-height: 1.68;
+      width: 92%;
     }
   }
   .c-intaview__representsign {
@@ -220,6 +222,10 @@ text
     letter-spacing: 0.6px;
     @include sp {
       font-size: 1.4rem;
+      width: 47%;
+      margin-top: 11px;
+      margin-right: 12px;
+      margin-left: auto;
     }
   }
   .c-intaview__representbottitle {
@@ -229,6 +235,8 @@ text
     letter-spacing: 2.3px;
     @include sp {
       font-size: 2.4rem;
+      letter-spacing: 1.6px;
+      margin-top: 32px;
     }
   }
   .c-intaview__representfooter {
@@ -238,19 +246,22 @@ text
     justify-content: space-between;
     @include sp {
       flex-direction: column;
+      margin: 34px auto 0;
     }
   }
   .c-intaview__representlogo {
     width: 42.7%;
     @include sp {
-      width: 100%;
+      width: 94.3%;
     }
   }
   .c-intaview__representcontact {
     width: 57.3%;
     margin-top: -6px;
     @include sp {
-      width: 100%;
+      margin-top: 25px;
+      margin-left: 9px;
+      width: 83.3%;
     }
   }
   .c-intaview__representcontactitem {
@@ -259,12 +270,16 @@ text
     font-weight: 500;
     justify-content: space-between;
     margin-bottom: 10px;
+    @include sp {
+      margin-bottom: 11px;
+    }
   }
   .c-intaview__contacten {
     letter-spacing: 0.4px;
     @include sp {
       font-size: 1.4rem;
       font-weight: 400;
+      line-height: 1.9;
     }
   }
   .c-intaview__contactlang {
@@ -283,12 +298,25 @@ text
     background: #fff;
     left: 54px;
     top: 18px;
+    @include sp {
+      width: 19px;
+      height: 1px;
+      left: 46px;
+      top: 13px;
+    }
   }
   .c-intaview__contactitem2 {
     max-width: 346px;
+    @include sp {
+      max-width: 204px;
+    }
   }
   .c-intaview__contacten3 {
     transform: translateX(-36px);
+    @include sp {
+      transform: translateX(-21px);
+    line-height: 2;
+    }
   }
   .c-intaview__zoom {
     position: absolute;
@@ -296,10 +324,11 @@ text
     flex-direction: column;
     align-items: center;
     bottom: 0%;
-    left: 27.6%;
-    transform: translateY(100%);
+    left: 50%;
+    transform: translate(-50%, 100%);
     transition: 0.4s;
     z-index: 2;
+    
   }
   .c-intaview__cardimage {
     position: relative;
@@ -322,7 +351,7 @@ text
         opacity: 0.6;
       }
       .c-intaview__zoom {
-        transform: translateY(-50%);
+        transform: translate(-50%, -50%);
         transition: 0.4s;
         bottom: 27.8%;
       }
@@ -339,6 +368,9 @@ text
     font-size: 2.4rem;
     font-weight: 600;
     color: $secondary;
+    @include sp {
+      font-size: 1.6rem;
+    }
   }
   .c-intaview__modal {
     position: fixed;

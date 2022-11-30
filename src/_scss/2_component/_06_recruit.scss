@@ -4,173 +4,185 @@ navi
 
 /*
 ------------------------------------------------------------*/
-.c-recruit  {
-    max-width: 960px;
-    margin: 0 auto;
-    padding-bottom: 62px;
-    .c-recruit__firstheading{
-        text-align: center;
-        font-size: 4.4rem;
-        color: $primary;
-        font-weight: 500;
-        margin-top: 91px;
-        letter-spacing: 3.4px;
-        @include sp{
-            font-size: 2.4rem;
-        }
+.c-recruit {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-bottom: 62px;
+  @include sp {
+    max-width: 355px;
+  }
+  .c-recruit__firstheading {
+    text-align: center;
+    font-size: 4.4rem;
+    color: $primary;
+    font-weight: 500;
+    margin-top: 91px;
+    letter-spacing: 3.4px;
+    @include sp {
+      font-size: 2.4rem;
+      margin-top: 37px;
+      letter-spacing: 1.4px;
     }
-    .c-recruit__subheading{
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: $gray;
-        text-align: center;
-        letter-spacing: 0.4px;
-        line-height: 1.7;
-        margin-top: 7px;
-        @include sp{
-            font-size: 1.4rem;
-        }
+  }
+  .c-recruit__subheading {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $gray;
+    text-align: center;
+    letter-spacing: 0.4px;
+    line-height: 1.7;
+    margin-top: 7px;
+    @include sp {
+      font-size: 1.4rem;
     }
-    .c-recruit__tabs{
-        display: flex;
-        margin-top: 57px;
-        align-items: flex-end;
+  }
+  .c-recruit__tabs {
+    display: flex;
+    margin-top: 57px;
+    align-items: flex-end;
+    @include sp {
+        margin-top: 31px;
     }
-    .c-recruit__tab{
-        width: 50%;
-        text-align: center;
-        border-top-right-radius: 20px;
-        cursor: pointer;
-        border: 1px solid #404141;
-        border-left: none;
-        font-size: 2.6rem;
-        padding: 31px 0 13px;
-        font-weight: 400;
-        @include sp {
-            font-size: 1.6rem;
-        }
+  }
+  .c-recruit__tab {
+    width: 50%;
+    text-align: center;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    border: 1px solid #404141;
+    border-left: none;
+    font-size: 2.6rem;
+    padding: 31px 0 13px;
+    font-weight: 400;
+    @include sp {
+        padding: 15px 0 11px;
+      font-size: 1.6rem;
+      border-top-right-radius: 10px;
     }
-    .c-recruit__tab:hover{
-        opacity: 0.7;
+  }
+  .c-recruit__tab:hover {
+    opacity: 0.7;
+  }
+  .c-recruit__tabcontent {
+    background-color: #f2f5f7;
+    padding: 59px 38px 57px;
+    border: 3px solid $primary;
+    table {
+      width: 100%;
+      border-collapse: collapse;
     }
-    .c-recruit__tabcontent{
-        background-color: #F2F5F7 ;
-        padding: 59px 38px 57px;
-        border: 3px solid $primary;
-        table{
-            width: 100%;
-            border-collapse: collapse; 
-        }
-        tr{
-            border-bottom: 1px solid #707070;
-        }
-        th {
-            font-size: 2rem;
-            font-weight: 600;
-            width: 29%;
-            padding-left: 59px;
-            text-align: start;
-            vertical-align: top;
-        }
-        td{
-
-            font-size: 1.6rem;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            width: 71%;
-            line-height: 1.76;
-        }
+    tr {
+      border-bottom: 1px solid #707070;
     }
-    .c-recruit__firsttd{
-        line-height: 0 !important;
+    th {
+      font-size: 2rem;
+      font-weight: 600;
+      width: 29%;
+      padding-left: 59px;
+      text-align: start;
+      vertical-align: top;
     }
-    .c-recruit__firstrow{
-        padding-bottom: 18px !important;
-        border-bottom: 5px solid $primary;
+    td {
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      width: 71%;
+      line-height: 1.76;
     }
-    .c-recruit__othersth{
-        padding-top: 20px;
-        padding-bottom: 17px;
+  }
+  .c-recruit__firsttd {
+    line-height: 0 !important;
+  }
+  .c-recruit__firstrow {
+    padding-bottom: 18px !important;
+    border-bottom: 5px solid $primary;
+  }
+  .c-recruit__othersth {
+    padding-top: 20px;
+    padding-bottom: 17px;
+  }
+  .c-recruit__otherstd {
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+  .c-recruit__tableactions {
+    display: flex;
+    max-width: 742px;
+    margin: 44px auto 0;
+    justify-content: space-between;
+    @include sp {
+      flex-direction: column;
     }
-    .c-recruit__otherstd{
-        padding-top: 15px;
-        padding-bottom: 17px;
+  }
+  .c-recruit__tableaction {
+    display: flex;
+    font-size: 2.2rem;
+    font-weight: 400;
+    width: 47.7%;
+    padding: 16px 33px;
+    background: $primary;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 9px;
+    @include sp {
+      width: 100%;
+      font-size: 1.8rem;
     }
-    .c-recruit__tableactions{
-        display: flex;
-        max-width: 742px;
-        margin: 44px auto 0;
-        justify-content: space-between;
-        @include sp {
-            flex-direction: column;
-        }
+  }
+  .c-recruit__assignmenticon {
+    width: 11%;
+  }
+  .c-recruit__assignmenttext {
+    width: 85%;
+  }
+  .c-recruit__tableaction1 {
+    margin-left: 33px;
+  }
+  .c-recruit__about {
+    padding-top: 49px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #cbcbcb;
     }
-    .c-recruit__tableaction{
-        display:  flex;
-        font-size: 2.2rem;
-        font-weight: 400;
-        width: 47.7%;
-        padding: 16px 33px;
-        background: $primary;
-        justify-content: space-between;
-        color: #Fff;
-        border-radius: 9px;
-        @include sp {
-            width: 100%;
-            font-size: 1.8rem;
-        }
+    tr {
+      border-bottom: 1px solid #cbcbcb;
     }
-    .c-recruit__assignmenticon{
-        width: 11%;
+    th {
+      font-size: 1.6rem;
+      font-weight: 400;
+      background: #f7f7f7;
+      width: 30%;
+      text-align: start;
+      padding-left: 18px;
+      vertical-align: top;
+      padding-top: 20px;
     }
-    .c-recruit__assignmenttext{
-        width: 85%;
+    td {
+      border: 1px solid #cbcbcb;
+      font-size: 1.6rem;
+      font-weight: 400;
+      width: 71%;
+      line-height: 1.76;
+      padding-top: 15px;
+      padding-left: 19px;
+      padding-bottom: 11px;
+      ul {
+        line-height: 1.83;
+      }
     }
-    .c-recruit__tableaction1{
-        margin-left: 33px;
+  }
+  .is-active {
+    background: $primary;
+    width: 58%;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 32px 0 19px;
+    line-height: 1.7;
+    @include sp {
+        padding: 15px 0 9px;
     }
-    .c-recruit__about{
-        padding-top: 49px;
-        table{
-            width: 100%;
-            border-collapse: collapse; 
-            border: 1px solid #CBCBCB;
-        }
-        tr{
-            border-bottom: 1px solid #CBCBCB ;
-        }
-        th {
-            font-size: 1.6rem;
-            font-weight: 400;
-            background: #F7F7F7;
-            width: 30%;
-            text-align: start; 
-            padding-left: 18px;
-            vertical-align: top;
-            padding-top: 20px;
-        }
-        td{
-            border: 1px solid #CBCBCB ;
-            font-size: 1.6rem;
-            font-weight: 400;
-            width: 71%;
-            line-height: 1.76;
-            padding-top: 15px;
-            padding-left: 19px;
-            padding-bottom: 11px;
-            ul{
-            line-height: 1.83;
-            }
-        }
-    }
-    .is-active {
-        background: $primary;
-        width: 58%;
-        color: #fff;
-        border: none;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding: 32px 0 19px;
-        line-height: 1.7;
-    }
+  }
 }

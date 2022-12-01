@@ -96,19 +96,23 @@
     "url": [
       {
         "src": "./assets/img/service-1.png",
-        "srcSp": "./assets/img/service-1-sp.jpg"
+        "srcSp": "./assets/img/service-1-sp.jpg",
+        "srcTab": "./assets/img/service-1-tab.jpg"
       },
       {
         "src": "./assets/img/service-2.png",
-        "srcSp": "./assets/img/service-2-sp.jpg"
+        "srcSp": "./assets/img/service-2-sp.jpg",
+        "srcTab": "./assets/img/service-2-tab.jpg"
       },
       {
         "src": "./assets/img/service-3.png",
-        "srcSp": "./assets/img/service-3-sp.jpg"
+        "srcSp": "./assets/img/service-3-sp.jpg",
+        "srcTab": "./assets/img/service-3-tab.jpg"
       },
       {
         "src": "./assets/img/service-4.png",
-        "srcSp": "./assets/img/service-4-sp.jpg"
+        "srcSp": "./assets/img/service-4-sp.jpg",
+        "srcTab": "./assets/img/service-4-tab.jpg"
       }
     ]
   },

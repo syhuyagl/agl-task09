@@ -33,21 +33,25 @@
       {
         "src": "./assets/img/intro-1.jpg",
         "alt": "仕事内容の紹介",
+        "srcTab": "./assets/img/intro-1-tab.jpg",
         "srcSp": "./assets/img/intro-1-sp.jpg"
       },
       {
         "src": "./assets/img/intro-2.jpg",
+        "srcTab": "./assets/img/intro-2-tab.jpg",
         "alt": "仕事内容の紹介",
         "srcSp": "./assets/img/intro-2-sp.jpg"
       },
       {
         "src": "./assets/img/intro-3.jpg",
         "alt": "仕事内容の紹介",
+        "srcTab": "./assets/img/intro-3-tab.jpg",
         "srcSp": "./assets/img/intro-3-sp.jpg"
       },
       {
         "src": "./assets/img/intro-4.jpg",
         "alt": "仕事内容の紹介",
+        "srcTab": "./assets/img/intro-4-tab.jpg",
         "srcSp": "./assets/img/intro-4-sp.jpg"
       }
     ]

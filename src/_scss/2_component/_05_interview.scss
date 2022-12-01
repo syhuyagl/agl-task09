@@ -12,6 +12,9 @@ text
     text-align: center;
     letter-spacing: 3.2px;
     margin-top: 90px;
+    @include tab {
+      font-size: 3rem;
+    }
     @include sp {
       font-size: 2.4rem;
       margin-top: 32px;
@@ -26,8 +29,15 @@ text
     line-height: 1.7;
     margin-top: 4px;
     letter-spacing: 0.3px;
+    @include tab {
+      font-size: 1.4rem;
+
+    }
     @include sp {
       font-size: 1.4rem;
+      margin-top: 8px;
+    line-height: 1.6;
+
     }
   }
   .c-intaview__cards {
@@ -37,6 +47,8 @@ text
     width: 100%;
     justify-content: space-between;
     @include sp {
+      max-width: 375px;
+          margin: 31px auto 0;
       flex-direction: column;
     }
   }
@@ -69,7 +81,8 @@ text
     @include sp {
       max-width: 280px;
       padding: 9px 7px;
-      left: 7.8%;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: -16.7%;
     }
   }
@@ -86,10 +99,16 @@ text
   }
   .c-intaview__cardtext {
     width: 83.4%;
+    @include sp {
+      width: 79.4%;
+    }
   }
   .c-intaview__cardname {
     font-size: 2rem;
     color: #fff;
+    @include tab {
+      font-size: 1.4rem;
+    }
     @include sp {
       font-size: 1.6rem;
     }
@@ -97,6 +116,9 @@ text
   .c-intaview__cardposition {
     font-size: 1.4rem;
     color: #fff;
+    @include tab {
+      font-size: 1.2rem;
+    }
     @include sp {
       font-size: 1.2rem;
       letter-spacing: 0.3px;
@@ -110,11 +132,16 @@ text
     color: $primary;
     margin: 15px auto 1px 21px;
     letter-spacing: 0.3px;
+    @include tab {
+      font-size: 1.5rem;
+    }
     @include sp {
       font-size: 1.4rem;
       width: 58%;
       padding-left: 12px;
       padding-top: 69px;
+      line-height: 1.6;
+      padding-top: 65px;
       margin: 0 0;
     }
   }
@@ -138,6 +165,9 @@ text
     font-weight: 500;
     padding-top: 92px;
     letter-spacing: 1px;
+    @include tab {
+      font-size: 3.4rem;
+    }
     @include sp {
       font-size: 2.4rem;
       padding-top: 34px;
@@ -148,6 +178,9 @@ text
     font-weight: 500;
     margin-top: 39px;
     letter-spacing: 0.5px;
+    @include tab {
+      font-size: 2rem;
+    }
     @include sp {
       font-size: 2rem;
       margin-top: 30px;
@@ -207,6 +240,9 @@ text
     margin-top: 31px;
     letter-spacing: -0.5px;
     line-height: 1.8;
+    @include tab {
+      font-size: 2rem;
+    }
     @include sp {
       font-size: 1.6rem;
       margin-top: 15px;
@@ -220,6 +256,9 @@ text
     font-weight: 500;
     margin-top: 23px;
     letter-spacing: 0.6px;
+    @include tab {
+      font-size: 1.8rem;
+    }
     @include sp {
       font-size: 1.4rem;
       width: 47%;
@@ -270,6 +309,9 @@ text
     font-weight: 500;
     justify-content: space-between;
     margin-bottom: 10px;
+    @include tab {
+      font-size: 2rem;
+    }
     @include sp {
       margin-bottom: 11px;
     }
@@ -388,17 +430,27 @@ text
     margin: 80px auto;
     border: 4px solid $primary;
     padding: 48px 57px;
+    @include sp {
+      width: 90%;
+      padding: 21px 17px;
+    }
   }
   .c-intaview__modalcontent {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
+    @include sp {
+      flex-direction: column;
+    }
   }
   .c-intaview__modaltitle {
     font-size: 2.4rem;
     font-weight: 600;
     color: $primary;
     letter-spacing: -2px;
+    @include sp {
+      font-size: 2rem;
+    }
   }
   .c-intaview__modalcardname {
     background: $primary;
@@ -406,6 +458,9 @@ text
   }
   .c-intaview__modalcard {
     width: 34.6%;
+    @include sp {
+      width: 100%;
+    }
   }
   .c-intaview__modalqa {
     width: 65.4%;
@@ -421,6 +476,9 @@ text
       line-height: 1.8;
       margin-top: 7px;
       margin-bottom: 59px;
+    }
+    @include sp {
+      width: 100%;
     }
   }
   .c-intaview__modalname {

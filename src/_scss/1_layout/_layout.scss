@@ -42,9 +42,37 @@ section {
         display: none;
     }
 }
+.is-tab{
+    display: none;
+    @include tab {
+        display: block;
+    }
+    @include sp {
+        display:  none;
+    }
+    
+}
 .is-sp{
     display: none;
     @include sp {
         display: block;
+    }
+}
+.is-pctr{
+    display: table-row;
+    @include sp {
+        display: none;
+    }
+}
+.is-pcspan{
+    display: inline-block;
+    @include tab {
+        display: none;
+    }
+}
+.is-spspan{
+    display: none;
+    @include tab {
+        display: inline-block;
     }
 }

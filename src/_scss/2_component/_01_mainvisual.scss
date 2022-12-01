@@ -5,57 +5,72 @@ btn
 /*
 ------------------------------------------------------------*/
 .c-mainvisual {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 3px;
+  position: relative;
+  @include tab {
+    margin-top: -4px;
+  }
+  .c-mainvisual__slider {
     width: 100%;
-    overflow: hidden;
-    margin-top: 3px;
-    position: relative;
-
-    .c-mainvisual__slider {
-        width: 100%;
-    }
-
-    .c-mainvisual__heading {
-        position: absolute;
-        font-size: 5rem;
-        font-weight: 500;
-        color: #fff;
-        top: 28%;
-        letter-spacing: 2.7px;
-        left: 10%;
-        @include sp {
-         font-size: 2.8rem;   
-            top: 32%;
-        letter-spacing: 0px;
-        left: 5%;
+    
+  }
+  .slick-slide{
+    @include tab {
+        img {
+          height: 788px;
         }
+      }
+  }
+  .c-mainvisual__heading {
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 500;
+    color: #fff;
+    top: 28%;
+    letter-spacing: 2.7px;
+    left: 10%;
+    @include tab {
+      font-size: 4rem;
+      top: 33.2%;
+      left: 5%;
+      line-height: 1.44;
     }
+    @include sp {
+      font-size: 2.8rem;
+      top: 32%;
+      letter-spacing: 0px;
+      left: 5%;
+    }
+  }
 
-    .c-mainvisual__heading1 {
-        display: block;
-        background-color: $primary;
-        width: fit-content;
-        padding-left: 8px;
-        margin-bottom: 10px;
-       @include sp {
-        margin-bottom: 4px;
-       }
+  .c-mainvisual__heading1 {
+    display: block;
+    background-color: $primary;
+    width: fit-content;
+    padding-left: 8px;
+    margin-bottom: 10px;
+    @include sp {
+      margin-bottom: 4px;
     }
+  }
 
-    .c-mainvisual__heading2 {
-        display: block;
-        margin-bottom: 10px;
-        width: fit-content;
-        padding-left: 8px;
-        background-color: $primary;
-        @include sp {
-            margin-bottom: 4px;
-           }
+  .c-mainvisual__heading2 {
+    display: block;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding-left: 8px;
+    background-color: $primary;
+    @include sp {
+      margin-bottom: 4px;
     }
+  }
 
-    .c-mainvisual__heading3 {
-        display: block;
-        width: fit-content;
-        padding-left: 8px;
-        background-color: $primary;
-    }
+  .c-mainvisual__heading3 {
+    display: block;
+    width: fit-content;
+    padding-left: 8px;
+    background-color: $primary;
+  }
 }

@@ -7,6 +7,10 @@ title
 .c-about {
   background: linear-gradient(90deg, #0080cc 76.7%, #fff 23.3%);
   padding-bottom: 122px;
+  @include tab {
+    background: linear-gradient(90deg, #0080cc 86.9%, #fff 14.1%);
+    padding-bottom: 72px;
+  }
   @include sp {
     background: linear-gradient(90deg, #0080cc 97.3%, #fff 12.7%);
     padding-bottom: 54px;
@@ -32,6 +36,18 @@ title
       left: 50%;
       top: -14%;
     }
+    @include tab {
+      font-size: 2.2rem;
+      font-weight: 500;
+      max-width: 686px;
+      transform: translateY(-65px);
+      padding: 18px 68px 13px;
+      letter-spacing: -1.8px;
+      &::after {
+        left: 51.3%;
+        top: -33%;
+      }
+    }
     @include sp {
       font-size: 1.8rem;
       width: 94%;
@@ -56,6 +72,12 @@ title
     left: 45.8%;
     top: -57%;
     letter-spacing: 0.3px;
+    @include tab {
+      transform: translateX(-50%);
+      top: -87%;
+      left: 50%;
+      letter-spacing: -2.7px;
+    }
     @include sp {
       font-size: 1.6rem;
       transform: translateX(-50%);
@@ -68,6 +90,9 @@ title
     font-weight: 500;
     letter-spacing: 2.2px;
     color: #fff;
+    @include tab {
+      font-size: 3rem;
+    }
     @include sp {
       font-size: 2.4rem;
       letter-spacing: 1.3px;
@@ -76,6 +101,10 @@ title
 
   .c-about__description {
     margin-top: 23px;
+    @include tab {
+      margin-top: 7px;
+      margin-left: 2px;
+    }
     @include sp {
       margin-top: 9px;
     }
@@ -87,6 +116,13 @@ title
     color: #fff;
     line-height: 1.75;
     letter-spacing: 0.3px;
+    @include tab {
+      font-size: 1.4rem;
+      font-weight: 500;
+      letter-spacing: -1.1px;
+      max-width: 388px;
+      line-height: 1.79;
+    }
     @include sp {
       font-size: 1.4rem;
       line-height: 1.58;
@@ -97,6 +133,11 @@ title
     width: 50%;
     margin-top: 13px;
     padding-left: 120px;
+    @include tab {
+      width: 60%;
+      margin-top: 22px;
+      padding-left: 16px;
+    }
     @include sp {
       width: 100%;
       margin-top: 43px;
@@ -106,6 +147,9 @@ title
 
   .c-about__image {
     width: 50%;
+    @include tab {
+      width: 40%;
+    }
     @include sp {
       width: 100%;
     }
@@ -123,6 +167,12 @@ title
 
   .c-about__image1 {
     position: relative;
+    @include tab {
+      transform: translate(-23px, -9px);
+    }
+    @include sp {
+      transform: translate(0, 0);
+    }
   }
 
   .c-about__image1::before {
@@ -135,6 +185,12 @@ title
     position: absolute;
     z-index: 2;
     top: 5%;
+    @include tab {
+      left: -5.1%;
+      width: 100%;
+      height: 304px;
+      top: 5%;
+    }
     @include sp {
       width: 93.4%;
       height: 196px;
@@ -144,8 +200,12 @@ title
   .c-about__image2 {
     position: relative;
     margin-top: 44px;
+    @include tab {
+      transform: translate(-23px, -9px);
+    }
     @include sp {
-        margin-top: 29px;
+      margin-top: 29px;
+      transform: translate(0, 0);
     }
   }
 
@@ -159,9 +219,15 @@ title
     position: absolute;
     z-index: 2;
     top: 5%;
+    @include tab {
+      left: -5.1%;
+      width: 100%;
+      height: 304px;
+      top: 5%;
+    }
     @include sp {
-        width: 93.4%;
-        height: 196px;
-      }
+      width: 93.4%;
+      height: 196px;
+    }
   }
 }

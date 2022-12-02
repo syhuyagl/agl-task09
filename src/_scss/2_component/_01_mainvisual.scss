@@ -13,16 +13,21 @@ btn
   }
   .c-mainvisual__slider {
     width: 100%;
-    img{
+    img {
       width: 100%;
     }
   }
-  .slick-slide{
+  .slick-slide {
     @include tab {
-        img {
-          height: 788px;
-        }
+      img {
+        height: 788px;
       }
+    }
+    @include sp {
+      img {
+        max-height: 755px;
+      }
+    }
   }
   .c-mainvisual__heading {
     position: absolute;

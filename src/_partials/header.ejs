@@ -11,11 +11,30 @@
       <% } %>
     </ul>
   </nav>
-  <a href="#" class="c-header__assignment">
-        <img src="./assets/img/assignment.svg" alt="募集要項">
-        <span>募集要項</span>
-  </a>
-  <div class="is-sp">
-    <img src="./assets/img/menu.svg" alt="">
+  <div class="c-header__spnav">
+    <a href="#" class="c-header__assignment">
+          <img src="./assets/img/assignment.svg" alt="募集要項">
+          <span>募集要項</span>
+    </a>
+    <div class="is-sp c-header__menu">
+      <img class="c-header__menuiconopen is-show"  src="./assets/img/menu.svg" alt="">
+      <img  class="c-header__menuiconclose is-close" src="./assets/img/closemenu.svg" alt="">
+    </div>
+  </div>
+  <div class="c-header__submenu">
+    <div class="c-header__submenuitems">
+      <% if (typeof linklists != 'undefined') { %>
+        <% linklists.main && linklists.main.forEach(link => { %>
+          <a <% if(link.class) {%>class="c-header__submenuitem" <%}  %>  >
+            <img src="./assets/img/play-icon.svg" alt="">
+            <span class="c-header__submenutitle"><%= link.title %></span>
+          </a>
+        <% }) %>
+      <% } %>
+    </div>
+    <a href="#" class="c-header__submenuassignment">
+      <img src="./assets/img/assignment.svg" alt="募集要項">
+      <span>募集要項</span>
+    </a>
   </div>
 </header>

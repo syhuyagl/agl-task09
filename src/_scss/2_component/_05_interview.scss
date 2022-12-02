@@ -442,7 +442,6 @@ text
     transform: translateX(-36px);
     @include tab {
       transform: translateX(0px);
-
     }
     @include sp {
       transform: translateX(-21px);
@@ -518,17 +517,25 @@ text
     margin: 80px auto;
     border: 4px solid $primary;
     padding: 48px 57px;
+    @include tab {
+      max-width: 700px;
+    }
     @include sp {
       width: 90%;
-      padding: 21px 17px;
+      padding: 37px 17px;
     }
   }
   .c-intaview__modalcontent {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
+    @include tab {
+      flex-direction: column;
+    align-items: center;
+    }
     @include sp {
       flex-direction: column;
+      margin-top: 10px;
     }
   }
   .c-intaview__modaltitle {
@@ -543,9 +550,15 @@ text
   .c-intaview__modalcardname {
     background: $primary;
     padding: 10px 0 13px;
+    @include sp {
+      padding: 8px 0 13px;
+    }
   }
   .c-intaview__modalcard {
     width: 34.6%;
+    @include tab {
+      width: 50%;
+    }
     @include sp {
       width: 100%;
     }
@@ -565,8 +578,21 @@ text
       margin-top: 7px;
       margin-bottom: 59px;
     }
+    @include tab {
+      margin-top: 28px;
+    }
     @include sp {
       width: 100%;
+      margin-top: 41px;
+      dt {
+        font-size: 1.6rem;
+      }
+      dd {
+        font-size: 1.4rem;
+        margin-top: 9px;
+        line-height: 1.6;
+        margin-bottom: 56px;
+      }
     }
   }
   .c-intaview__modalname {
@@ -574,6 +600,9 @@ text
     color: #fff;
     font-weight: 600;
     text-align: center;
+    @include sp {
+      font-weight: 500;
+    }
   }
   .c-intaview__modalposition {
     font-size: 1.6rem;

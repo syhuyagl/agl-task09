@@ -1,7 +1,7 @@
 <footer class="c-footer">
   <div class="c-footer__nav">
      <h1 class="c-footer__logo"><a href="<%= BASE_URL %>index.html"><img src="./assets/img/logo.png" alt="Logo"></a></h1>
-    <nav class="c-gnav is-pc">
+    <nav class="c-gnav is-pcntab">
       <ul>
         <% if (typeof linklists != 'undefined') { %>
           <% linklists.main && linklists.main.forEach(link => { %>
@@ -12,7 +12,7 @@
         <% } %>
       </ul>
     </nav>
-    <a href="#" class="c-footer__assignment is-pc">
+    <a href="#" class="c-footer__assignment is-pcntab">
         <img src="./assets/img/assignment.svg" alt="募集要項">
         <span>募集要項</span>
     </a>

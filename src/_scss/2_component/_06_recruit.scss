@@ -10,10 +10,11 @@ navi
   padding-bottom: 62px;
   @include tab {
     max-width: 729px;
+    padding-bottom: 66px;
   }
   @include sp {
     max-width: 355px;
-    padding-bottom: 71px;
+    padding-bottom: 72px;
   }
   .c-recruit__firstheading {
     text-align: center;
@@ -150,9 +151,9 @@ navi
     border-bottom: 5px solid $primary !important;
   }
   .c-recruit__firstrow {
-    padding-bottom: 18px !important;
+    padding-bottom: 15px !important;
     @include tab {
-      padding-bottom: 21px !important;
+      padding-bottom: 17px !important;
     }
     @include sp {
       padding-bottom: 24px !important;

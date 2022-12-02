@@ -6,7 +6,6 @@ btn
 ------------------------------------------------------------*/
 .c-mainvisual {
   width: 100%;
-  overflow: hidden;
   margin-top: 3px;
   position: relative;
   @include tab {
@@ -14,7 +13,9 @@ btn
   }
   .c-mainvisual__slider {
     width: 100%;
-    
+    img{
+      width: 100%;
+    }
   }
   .slick-slide{
     @include tab {

@@ -89,6 +89,7 @@ icon
     flex-direction: column;
     @include tab {
       width: 51.5%;
+      max-width: 288px;
     }
     @include sp {
       flex-direction: row;
@@ -153,6 +154,7 @@ icon
     margin-top: 31px;
     @include tab {
       margin-top: 15px;
+      margin-right: 20px;
     }
     @include sp {
       margin-top: 17px;
@@ -211,6 +213,9 @@ icon
     }
     @include tab {
       margin-bottom: 16px;
+      p {
+        padding-left: 19px;
+      }
     }
     @include sp {
       margin-bottom: 11px;
@@ -228,6 +233,7 @@ icon
       margin-bottom: 9px;
       p {
         line-height: 1.6;
+        padding: 12px 0 26px 12px;
       }
     }
     @include sp {
@@ -242,6 +248,13 @@ icon
     p {
       line-height: 1.61;
     }
+    @include tab {
+      margin-bottom: 14px;
+
+      p {
+        padding: 16px 0 24px 12px;
+      }
+    }
     @include sp {
       margin-bottom: 9px;
     }
@@ -250,6 +263,12 @@ icon
     margin-bottom: 21px;
     p {
       line-height: 1.61;
+    }
+    @include tab {
+      margin-bottom: 15px;
+      p {
+        padding: 14px 0 5px 12px;
+      }
     }
     @include sp {
       margin-bottom: 11px;
@@ -264,6 +283,12 @@ icon
     p {
       line-height: 1.61;
     }
+    @include tab {
+      margin-bottom: 17px;
+      p {
+        padding: 14px 0 5px 12px;
+      }
+    }
     @include sp {
       margin-bottom: 11px;
       p {
@@ -276,6 +301,13 @@ icon
     margin-bottom: 22px;
     p {
       line-height: 1.61;
+    }
+    @include tab {
+      margin-bottom: 16px;
+
+      p {
+        padding: 14px 0 5px 12px;
+      }
     }
     @include sp {
       margin-bottom: 11px;
@@ -290,6 +322,12 @@ icon
     p {
       line-height: 1.61;
     }
+    @include tab {
+      margin-bottom: 16px;
+      p {
+        padding: 14px 0 5px 12px;
+      }
+    }
     @include sp {
       margin-bottom: 10px;
       p {
@@ -301,7 +339,7 @@ icon
   .c-work__photos {
     margin-top: 90px;
     @include tab {
-      margin-top: 26px;
+      margin-top: 64px;
     }
     @include sp {
       margin-top: 37px;
@@ -333,7 +371,8 @@ icon
     margin: 34px auto 0;
     display: flex;
     border: 1px solid $primary;
-    @include tab {max-width: 732px;
+    @include tab {
+      max-width: 732px;
       margin: 30px auto 0;
     }
     @include sp {
@@ -384,7 +423,7 @@ icon
       width: 100%;
       margin-left: 7px;
       margin-bottom: 2px;
-      margin-top: 6px;
+      margin-top: 8px;
     }
   }
   .c-work__zoom {

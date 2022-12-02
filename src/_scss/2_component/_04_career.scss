@@ -87,8 +87,9 @@ form
     top: 14.3%;
     @include tab {
       left: 2.6%;
-      top: 15.3%;
+      top: 10.4%;
       max-width: 383px;
+      padding: 25px 31px 56px;
     }
     @include sp {
       position: static;
@@ -127,6 +128,7 @@ form
       font-size: 1.4rem;
       letter-spacing: -1.4px;
       line-height: 1.8;
+      margin-top: 15px;
     }
     @include sp {
       font-size: 1.4rem;
@@ -141,7 +143,7 @@ form
     padding-bottom: 104px;
     background-color: #f8f8f8;
     @include tab {
-      margin-top: 26px;
+      margin-top: 1px;
       width: 86.8%;
       padding-bottom: 59px;
     }
@@ -399,6 +401,7 @@ form
     flex-direction: column;
     @include tab {
       width: 41.5%;
+      max-width: 288px;
     }
     @include sp {
       flex-wrap: wrap;
@@ -534,7 +537,7 @@ form
     @include sp {
       letter-spacing: 0.1px;
       margin-top: 0px;
-      margin-bottom: 7px;
+      margin-bottom: 5px;
     }
   }
   .c-career__dd2 {
@@ -591,21 +594,34 @@ form
     }
   }
   .c-career__bracket {
+    font-size: 1.6rem;
     @include tab {
       font-size: 1.6rem;
       letter-spacing: -1px;
+    }  
+    @include sp{
+      font-size: 1.4rem;
     }
   }
   .c-career__bracket2 {
+    font-size: 1.6rem;
+    letter-spacing: -1px;
     @include tab {
       font-size: 1.4rem;
       letter-spacing: -1px;
     }
+    @include sp{
+      font-size: 1.4rem;
+    }
   }
   .c-career__bracket3 {
+    font-size: 1.6rem;
     @include tab {
       font-size: 1.6rem;
       letter-spacing: -1px;
+    }
+    @include sp{
+      font-size: 1.4rem;
     }
   }
   .c-career__ddsmall {

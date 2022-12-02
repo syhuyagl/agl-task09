@@ -13,6 +13,9 @@ footer
     padding: 11px 21px 16px;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
+    @include tab {
+      flex-wrap: wrap;
+    }
     @include sp {
       padding: 9px 11px 0px;
     }
@@ -25,20 +28,42 @@ footer
       display: flex;
       justify-content: space-between;
     }
-
+    @include tab {
+      width: 100%;
+      margin: 33px auto 0;
+    }
+    @include sp {
+      display: none;
+    }
     li {
       display: inline-block;
     }
   }
   .c-header__firstitem {
     margin-left: 89px;
+    @include tab {
+      margin-left: 19px;
+    }
   }
   .c-header__seconditem {
     margin-left: -7px;
     transform: translateX(13px);
+    @include tab {
+      transform: translateX(-5px);
+    }
   }
   .c-header__thirditem {
     margin-left: 20px;
+  }
+  .c-header__fourthitem {
+    @include tab {
+      transform: translateX(-8px);
+    }
+  }
+  .c-header__fifthitem {
+    @include tab {
+      transform: translateX(-19px);
+    }
   }
   .c-footer__logo {
     padding-top: 11px;
@@ -86,6 +111,21 @@ footer
       padding-top: 12px;
       letter-spacing: 2.3px;
       margin-left: -2px;
+    }
+    @include tab {
+      position: absolute;
+      right: 22px;
+      margin-top: 9px;
+      font-size: 1.6rem;
+      padding: 0px 0px 0px;
+      top: 11px;
+      img {
+        top: 2px;
+        left: -6px;
+      }
+      span {
+        letter-spacing: 4px;
+      }
     }
   }
   .c-footer__externalsite{

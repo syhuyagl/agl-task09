@@ -84,7 +84,7 @@ text
     justify-content: center;
     padding: 15px 19px;
     left: 2%;
-    bottom: -8.7%;
+    bottom: -8.8%;
     @include tab {
       width: 190px;
       padding: 13px 8px;
@@ -115,6 +115,9 @@ text
   }
   .c-intaview__cardtext {
     width: 83.4%;
+    @include tab {
+      padding-left: 15px;
+    }
     @include sp {
       width: 79.4%;
     }
@@ -168,6 +171,10 @@ text
     color: #fff;
     margin-top: 141px;
     padding-bottom: 124px;
+    @include tab {
+      margin-top: 86px;
+      padding-bottom: 44px;
+    }
     @include sp {
       margin-top: 25px;
       padding-left: 20px;
@@ -185,6 +192,9 @@ text
     letter-spacing: 1px;
     @include tab {
       font-size: 3.4rem;
+      padding-top: 59px;
+      padding-left: 20px;
+      letter-spacing: 1px;
     }
     @include sp {
       font-size: 2.4rem;
@@ -198,6 +208,9 @@ text
     letter-spacing: 0.5px;
     @include tab {
       font-size: 2rem;
+      letter-spacing: 1.5px;
+      padding-left: 10px;
+      margin-top: 22px;
     }
     @include sp {
       font-size: 2rem;
@@ -211,6 +224,11 @@ text
     margin-top: 28px;
     letter-spacing: 0.4px;
     line-height: 1.75;
+    @include tab {
+      margin-left: 19px;
+      width: 55%;
+      letter-spacing: -1.7px;
+    }
     @include sp {
       width: 96%;
       font-size: 1.4rem;
@@ -241,6 +259,14 @@ text
   }
   .c-intaview__representimage {
     margin-top: -35px;
+    @include tab {
+      width: 44%;
+      margin-top: -37px;
+      padding-left: 52px;
+      img {
+        max-width: 261px;
+      }
+    }
     @include sp {
       text-align: center;
       margin-top: 36px;
@@ -260,6 +286,10 @@ text
     line-height: 1.8;
     @include tab {
       font-size: 2rem;
+      margin-top: 101px;
+      margin-left: 20px;
+      letter-spacing: -1.3px;
+      line-height: 2.1;
     }
     @include sp {
       font-size: 1.6rem;
@@ -276,6 +306,9 @@ text
     letter-spacing: 0.6px;
     @include tab {
       font-size: 1.8rem;
+      margin-top: 43px;
+      margin-left: 20px;
+      letter-spacing: 0;
     }
     @include sp {
       font-size: 1.4rem;
@@ -290,6 +323,11 @@ text
     font-weight: 500;
     margin-top: 47px;
     letter-spacing: 2.3px;
+    @include tab {
+      margin-top: 51px;
+      margin-left: 19px;
+      letter-spacing: 2px;
+    }
     @include sp {
       font-size: 2.4rem;
       letter-spacing: 1.6px;
@@ -301,6 +339,9 @@ text
     max-width: 880px;
     margin: 44px auto 0;
     justify-content: space-between;
+    @include tab {
+      margin: 25px auto 0;
+    }
     @include sp {
       flex-direction: column;
       margin: 34px auto 0;
@@ -308,6 +349,11 @@ text
   }
   .c-intaview__representlogo {
     width: 42.7%;
+    @include tab {
+      max-width: 247px;
+      width: 39.7%;
+      transform: translateX(20px);
+    }
     @include sp {
       width: 94.3%;
     }
@@ -315,6 +361,9 @@ text
   .c-intaview__representcontact {
     width: 57.3%;
     margin-top: -6px;
+    @include tab {
+      width: 60%;
+    }
     @include sp {
       margin-top: 25px;
       margin-left: 9px;
@@ -336,6 +385,10 @@ text
   }
   .c-intaview__contacten {
     letter-spacing: 0.4px;
+    @include tab {
+      width: 75%;
+      padding-top: 1px;
+    }
     @include sp {
       font-size: 1.4rem;
       font-weight: 400;
@@ -345,6 +398,9 @@ text
   .c-intaview__contactlang {
     letter-spacing: 2px;
     position: relative;
+    @include tab {
+      letter-spacing: 0px;
+    }
     @include sp {
       font-size: 2rem;
       font-weight: 500;
@@ -358,6 +414,12 @@ text
     background: #fff;
     left: 54px;
     top: 18px;
+    @include tab {
+      width: 41px;
+      height: 1px;
+      left: 51px;
+      top: 11px;
+    }
     @include sp {
       width: 19px;
       height: 1px;
@@ -367,12 +429,21 @@ text
   }
   .c-intaview__contactitem2 {
     max-width: 346px;
+    @include tab {
+      margin-top: 15px;
+      max-width: 443px;
+      margin-bottom: 15px;
+    }
     @include sp {
       max-width: 204px;
     }
   }
   .c-intaview__contacten3 {
     transform: translateX(-36px);
+    @include tab {
+      transform: translateX(0px);
+
+    }
     @include sp {
       transform: translateX(-21px);
       line-height: 2;

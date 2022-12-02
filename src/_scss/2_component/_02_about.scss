@@ -149,6 +149,7 @@ title
     width: 50%;
     @include tab {
       width: 40%;
+      max-width: 311px;
     }
     @include sp {
       width: 100%;

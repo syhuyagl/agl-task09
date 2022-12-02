@@ -8,6 +8,9 @@ navi
   max-width: 960px;
   margin: 0 auto;
   padding-bottom: 62px;
+  @include tab {
+    max-width: 729px;
+  }
   @include sp {
     max-width: 355px;
     padding-bottom: 71px;
@@ -19,6 +22,9 @@ navi
     font-weight: 500;
     margin-top: 91px;
     letter-spacing: 3.4px;
+    @include tab {
+      margin-top: 58px;
+    }
     @include sp {
       font-size: 2.4rem;
       margin-top: 37px;
@@ -33,6 +39,11 @@ navi
     letter-spacing: 0.4px;
     line-height: 1.7;
     margin-top: 7px;
+    @include tab {
+      letter-spacing: -2.3px;
+      line-height: 1.7;
+      margin-top: 4px;
+    }
     @include sp {
       font-size: 1.4rem;
     }
@@ -41,6 +52,9 @@ navi
     display: flex;
     margin-top: 57px;
     align-items: flex-end;
+    @include tab {
+      margin-top: 28px;
+    }
     @include sp {
       margin-top: 31px;
     }
@@ -53,8 +67,12 @@ navi
     border: 1px solid #404141;
     border-left: none;
     font-size: 2.6rem;
-    padding: 31px 0 13px;
+    padding: 31px 34px 13px 0;
     font-weight: 400;
+    @include tab {
+      border-top-right-radius: 10px;
+      padding: 13px 34px 4px 0;
+    }
     @include sp {
       padding: 15px 0 11px;
       font-size: 1.6rem;
@@ -91,17 +109,21 @@ navi
       width: 71%;
       line-height: 1.76;
     }
-    @include tab{
-      padding: 17px 7px 39px;
+    @include tab {
+      padding: 39px 22px 39px 18px;
       th {
         font-size: 1.6rem;
+        width: 24.8%;
+        padding-left: 23px;
       }
       td {
         font-size: 1.4rem;
+        letter-spacing: -0.5px;
+        line-height: 2.2;
       }
     }
     @include sp {
-      padding: 17px 7px 39px;
+      padding: 14px 7px 39px;
       tr {
         display: flex;
         flex-wrap: wrap;
@@ -116,41 +138,59 @@ navi
         letter-spacing: 0.3px;
         padding-left: 9px;
         font-size: 1.4rem;
+        line-height: 1.67;
       }
     }
   }
   .c-recruit__firsttd {
     line-height: 0 !important;
+    padding-top: 2px;
   }
   .c-recruit__firsttr {
     border-bottom: 5px solid $primary !important;
   }
   .c-recruit__firstrow {
     padding-bottom: 18px !important;
-    @include sp {
-      padding-bottom: 25px !important;
+    @include tab {
+      padding-bottom: 21px !important;
     }
+    @include sp {
+      padding-bottom: 24px !important;
+    }
+  }
+  .c-recruit__firstth {
+    padding-top: 4px;
   }
   .c-recruit__othersth {
     padding-top: 20px;
     padding-bottom: 17px;
+    @include tab {
+      padding-bottom: 10px;
+    }
     @include sp {
-      padding-top: 17px;
+      padding-top: 21px;
       padding-bottom: 2px;
     }
   }
   .c-recruit__otherstd {
     padding-top: 15px;
     padding-bottom: 17px;
+    @include tab {
+      padding-bottom: 10px;
+    }
   }
   .c-recruit__tableactions {
     display: flex;
     max-width: 742px;
     margin: 44px auto 0;
     justify-content: space-between;
+    @include tab {
+      max-width: 619px;
+      margin: 49px auto 0;
+    }
     @include sp {
       flex-direction: column;
-      margin: 31px auto 0;
+      margin: 15px auto 0;
     }
   }
   .c-recruit__tableaction {
@@ -163,11 +203,10 @@ navi
     justify-content: space-between;
     color: #fff;
     border-radius: 9px;
-    @include sp {
-      width: 90%;
+    @include tab {
+      width: 48.5%;
       font-size: 2rem;
-      margin: 0 auto;
-      padding: 13px 21px 11px;
+      padding: 13px 20px;
     }
     @include sp {
       width: 90%;
@@ -177,12 +216,23 @@ navi
     }
   }
   .c-recruit__nonstudent {
+    @include tab {
+      p {
+        margin-left: 20px;
+        letter-spacing: -1.5px;
+        transform: translateY(4px);
+      }
+    }
     @include sp {
       margin-top: 18px;
     }
   }
   .c-recruit__assignmenticon {
     width: 11%;
+    @include tab {
+      width: 27px;
+      height: 27px;
+    }
     @include sp {
       width: 21.5px;
       height: 21.5px;
@@ -190,14 +240,30 @@ navi
   }
   .c-recruit__assignmenttext {
     width: 85%;
+    @include tab {
+      letter-spacing: -1.4px;
+      width: 83%;
+    }
     @include sp {
       letter-spacing: 0.5px;
     }
   }
   .c-recruit__tableaction1 {
     margin-left: 33px;
+    @include tab {
+      margin-left: 44px;
+      letter-spacing: -2px;
+      transform: translateY(3px);
+    }
     @include sp {
       margin-left: 38px;
+    }
+  }
+  .c-recruit__student {
+    @include tab {
+      img {
+        transform: translate(12px, 1px);
+      }
     }
   }
   .c-recruit__secondheading {
@@ -207,6 +273,9 @@ navi
     font-weight: 500;
     margin-top: 91px;
     letter-spacing: 3.4px;
+    @include tab {
+      margin-top: 59px;
+    }
     @include sp {
       font-size: 2.4rem;
       margin-top: 57px;
@@ -246,14 +315,27 @@ navi
         line-height: 1.83;
       }
     }
-    @include sp {
-      padding-top: 34px;
-
+    @include tab {
+      padding-top: 18px;
       th {
         font-size: 1.4rem;
+        width: 30.4%;
+        padding-left: 20px;
+        vertical-align: top;
+        padding-top: 22px;
       }
       td {
         font-size: 1.4rem;
+        width: 69.6%;
+        line-height: 1.88;
+        padding-top: 17px;
+        padding-left: 29px;
+        padding-bottom: 11px;
+        letter-spacing: 0.3px;
+        ul {
+          line-height: 1.71;
+          padding-left: 4px;
+        }
       }
     }
     @include sp {
@@ -293,6 +375,10 @@ navi
     border-top-right-radius: 10px;
     padding: 32px 0 19px;
     line-height: 1.7;
+    @include tab {
+      padding: 13px 0 7px;
+      width: 59.1%;
+    }
     @include sp {
       padding: 15px 0 9px;
     }

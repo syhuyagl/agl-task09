@@ -41,6 +41,15 @@ section {
     display: none;
   }
 }
+.is-pcntab {
+  display: block;
+  @include tab {
+    display: block;
+  }
+  @include sp {
+    display: none;
+  }
+}
 .is-tabnsp{
   display: none;
   @include tab{
@@ -49,12 +58,47 @@ section {
   @include sp {
     display: block;
   }
-  
+}
+.is-tabnpctr{
+  display: table-row;
+  @include tab {
+    display: table-row;
+  }
+  @include sp {
+    display: none;
+  }
+}
+.is-tabnsptr{
+  display: none;
+  @include tab {
+    display: table-row;
+  }
+  @include sp {
+    display: table-row;
+  }
+}
+.is-tabtr{
+  display: none;
+  @include tab {
+    display: table-row;
+  }
+  @include sp {
+    display: none;
+  }
 }
 .is-tabnpc {
   display: block;
   @include sp {
     display: none;
+  }
+}
+.is-pcnsp {
+  display: block;
+  @include tab {
+    display: none;
+  }
+  @include sp {
+    display: block;
   }
 }
 .is-tab {

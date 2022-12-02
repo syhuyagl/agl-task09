@@ -424,7 +424,7 @@ icon
     }
     @include sp {
       width: 100%;
-      margin-left: 7px;
+      margin-left: 0px;
       margin-bottom: 2px;
       margin-top: 8px;
     }
@@ -470,6 +470,7 @@ icon
     }
     &:nth-of-type(2n + 1) {
       margin-right: 21px;
+      
     }
     @include tab {
       margin-bottom: 23px;
@@ -481,6 +482,7 @@ icon
       height: 101px;
       &:nth-of-type(2n + 1) {
         margin-right: 10px;
+        margin-left: 7px;
       }
     }
   }

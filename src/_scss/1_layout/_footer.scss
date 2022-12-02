@@ -21,6 +21,29 @@ footer
       padding: 9px 11px 0px;
     }
   }
+  .c-footer__logowrapper{
+    position: relative;
+  }
+  .c-footer__logotitle{
+    position: absolute;
+    font-size: 1.2rem;
+    display: none;
+    left: 49px;
+    color: $gray;
+    top: 30px;
+    font-weight: 400;
+    @include tab {
+      left: 47px;
+      top: 34px;
+    display: none;
+    }
+    @include sp {
+      font-size: 0.8rem;
+      left: 34px;
+      top: 29px;
+      display: inline-block;
+    }
+  }
   .c-gnav {
     margin: 7px auto 0;
     flex: 1 1 auto;

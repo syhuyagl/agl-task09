@@ -7,12 +7,35 @@
   padding: 15px 21px;
   position: relative;
   background: rgba(255, 255, 255, 0.9);
+  max-width: 1200px;
+  margin: 0 auto;
   @include tab {
     flex-wrap: wrap;
     padding: 11px 21px;
   }
   @include sp {
     padding: 9px 10px 0;
+  }
+  .c-header__logowrapper{
+    position: relative;
+  }
+  .c-header__logotitle{
+    position: absolute;
+    font-size: 1.2rem;
+    display: inline-block;
+    left: 49px;
+    color: $gray;
+    top: 30px;
+    font-weight: 400;
+    @include tab {
+      left: 47px;
+    top: 34px;
+    }
+    @include sp {
+      font-size: 1rem;
+      left: 31px;
+      top: 23px;
+    }
   }
   .c-gnav {
     margin: 7px auto 0;

@@ -15,9 +15,27 @@ btn
     width: 100%;
     img {
       width: 100%;
+    max-height:888px;
+
     }
   }
   .slick-slide {
+    img {
+      width: 100%;
+     
+    }
+    .c-mainvisual__slide1 {
+      transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
+      transform: scale(1);
+    }
+    .c-mainvisual__slide2 {
+      transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
+      transform: translateY(-3%);
+    }
+    .c-mainvisual__slide3 {
+      transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
+      transform: translateX(-3%);
+    }
     @include tab {
       img {
         height: 788px;
@@ -29,6 +47,19 @@ btn
       }
     }
   }
+  .slick-active{
+    .c-mainvisual__slide1 {
+      transform: scale(1.2)
+    }
+    .c-mainvisual__slide2 {
+      transform: translateY(0);
+    }
+    .c-mainvisual__slide3 {
+      transform: translateX(0);
+    }
+  }
+  
+  
   .c-mainvisual__heading {
     position: absolute;
     font-size: 5rem;

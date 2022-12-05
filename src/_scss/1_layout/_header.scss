@@ -105,7 +105,11 @@
     text-transform: capitalize;
   }
   .c-header__gnavitem:hover {
-    cursor: pointer;
+    cursor: pointer;  
+    a {
+      border-bottom: 2px solid $primary;
+      padding-bottom: 6px;
+    }
   }
   .is-active {
     a {
@@ -113,12 +117,7 @@
       padding-bottom: 6px;
     }
   }
-  .is-hover {
-    a {
-      border-bottom: 2px solid $primary;
-      padding-bottom: 6px;
-    }
-  }
+ 
   .c-header__assignment {
     margin-top: 6px;
     transform: translateX(1px);

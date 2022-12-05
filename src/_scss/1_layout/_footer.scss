@@ -13,6 +13,8 @@ footer
     padding: 11px 21px 16px;
     position: relative;
     background: rgba(255, 255, 255, 0.9);
+    max-width: 1200px;
+    margin: 0 auto;
     @include tab {
       flex-wrap: wrap;
       padding: 17px 21px 16px;
@@ -92,7 +94,7 @@ footer
     }
   }
   .c-footer__logo {
-    padding-top: 11px;
+    padding-top: 12px;
     padding-bottom: 6px;
     @include sp {
       width: 99px;

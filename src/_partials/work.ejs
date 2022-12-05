@@ -1,101 +1,119 @@
-<section class="c-work">
-    <h2 class="c-work__heading">私たちの仕事</h2>
-    <h3 class="c-work__subheading">
-      エクステリアのプロ集団と言っても、<br class="is-sp">仕事内容はさまざまです。<br>
-      仕事をしていく上で、「あなたの興味のあること」<br class="is-sp"><span class="is-pcspan">「向いていること」が見つけられるかもしれません。</span>
+<section class="c-work p-scroll">
+  <div class="c-work__header" >
+     <h2 class="c-work__heading">私たちの仕事</h2>
+  <h3 class="c-work__subheading">
+    エクステリアのプロ集団と言っても、<br
+      class="is-sp"
+    >仕事内容はさまざまです。<br >
+    仕事をしていく上で、「あなたの興味のあること」<br class="is-sp" ><span
+      class="is-pcspan"
+      >「向いていること」が見つけられるかもしれません。</span
+    >
+  </h3>
+  </div>
+ 
+  <div class="c-work__intro p-fade">
+    <div class="c-work__introcontent">
+      <div class="c-work__introimages">
+        <% if (typeof introImage != 'undefined') { %> <% introImage &&
+        introImage.url.forEach(url=> { %>
+        <div class="c-work__introimage">
+          <picture>
+            <source srcset="<%= url.srcSp %>" media="(max-width: 767px)" >
+            <source srcset="<%= url.srcTab %>" media="(max-width: 1024px)" >
+            <img class="" src="<%= url.src %>" alt="仕事内容の紹介" >
+          </picture>
+        </div>
+        <% }) %> <% } %>
+      </div>
+      <div class="c-work__introtext">
+        <p class="c-work__introtitle">仕事内容の紹介</p>
+        <span class="c-work__introsubtitle">
+          屋外での現場作業をメインに行ないます。
+        </span>
+        <div class="c-work__introitems">
+          <div class="c-work__introitem c-work__introitem1">
+            <span class="c-work__itemindex">1</span>
+            <p class="c-work__itemtext">重機の運転、土木作業の手元</p>
+          </div>
+          <div class="c-work__introitem c-work__introitem2">
+            <span class="c-work__itemindex">2</span>
+            <p class="c-work__itemtext">
+              ブロック積み、フェンス、カーポート、門扉、照明、ポ<br
+                class="is-pc"
+              >スト、表札と言われる金物商品の取付工事
+            </p>
+          </div>
+          <div class="c-work__introitem c-work__introitem3">
+            <span class="c-work__itemindex">3</span>
+            <p class="c-work__itemtext">
+              左官作業と言われるコンクリートを扱う工事作業
+            </p>
+          </div>
+          <div class="c-work__introitem c-work__introitem4">
+            <span class="c-work__itemindex">4</span>
+            <p class="c-work__itemtext">電気工事（照明、インターホンの取付）</p>
+          </div>
+          <div class="c-work__introitem c-work__introitem5">
+            <span class="c-work__itemindex">5</span>
+            <p class="c-work__itemtext">設備工事（給水管、排水管の設置）</p>
+          </div>
+          <div class="c-work__introitem c-work__introitem6">
+            <span class="c-work__itemindex">6</span>
+            <p class="c-work__itemtext">
+              植栽工事（新築への植栽の植え付け作業）
+            </p>
+          </div>
+          <div class="c-work__introitem c-work__introitem7">
+            <span class="c-work__itemindex">7</span>
+            <p class="c-work__itemtext">鉄筋の組立て作業</p>
+          </div>
+          <div class="c-work__introitem c-work__introitem8">
+            <span class="c-work__itemindex">8</span>
+            <p class="c-work__itemtext">型枠の設置工事</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c-work__photos">
+    <p class="c-work__photosheading">Photos & Movie</p>
+    <h3 class="c-work__subheading2">
+      私たちの仕事内容の一部を<br class="is-sp" >動画と写真でお伝えします。
     </h3>
-    <div class="c-work__intro">
-      <div class="c-work__introcontent">
-        <div class="c-work__introimages">
-            <% if (typeof introImage != 'undefined') { %> 
-                <% introImage && introImage.url.forEach(url=> { %>
-                  <div class="c-work__introimage">
-                    <picture>
-                      <source srcset="<%= url.srcSp %>" media="(max-width: 767px)">
-                      <source srcset="<%= url.srcTab %>" media="(max-width: 1024px)">
-                      <img class="" src="<%= url.src %>" alt="仕事内容の紹介" >
-                    </picture>
-                  </div>
-                   <% }) %> 
-                <% }
-             %>
-        </div>
-        <div class="c-work__introtext">
-          <p class="c-work__introtitle">仕事内容の紹介</p>
-          <span class="c-work__introsubtitle">
-            屋外での現場作業をメインに行ないます。
-          </span>
-          <div class="c-work__introitems">
-            <div class="c-work__introitem c-work__introitem1">
-              <span class="c-work__itemindex">1</span>
-              <p class="c-work__itemtext"> 重機の運転、土木作業の手元</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem2">
-              <span class="c-work__itemindex">2</span>
-              <p class="c-work__itemtext"> ブロック積み、フェンス、カーポート、門扉、照明、ポ<br class="is-pc">スト、表札と言われる金物商品の取付工事</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem3">
-              <span class="c-work__itemindex">3</span>
-              <p class="c-work__itemtext"> 左官作業と言われるコンクリートを扱う工事作業</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem4">
-              <span class="c-work__itemindex">4</span>
-              <p class="c-work__itemtext"> 電気工事（照明、インターホンの取付）</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem5">
-              <span class="c-work__itemindex">5</span>
-              <p class="c-work__itemtext"> 設備工事（給水管、排水管の設置）</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem6">
-              <span class="c-work__itemindex">6</span>
-              <p class="c-work__itemtext"> 植栽工事（新築への植栽の植え付け作業）</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem7">
-              <span class="c-work__itemindex">7</span>
-              <p class="c-work__itemtext"> 鉄筋の組立て作業</p>
-            </div>
-            <div class="c-work__introitem c-work__introitem8">
-              <span class="c-work__itemindex">8</span>
-              <p class="c-work__itemtext"> 型枠の設置工事</p>
-            </div>
+    <div class="c-work__content">
+      <div class="c-work__movie">
+        <video src="./assets/movies/movie.mp4"></video>
+      </div>
+      <div class="c-work__images">
+        <% if (typeof workImages != 'undefined') { %> <% workImages &&
+        workImages.url.forEach(url=> { %>
+        <div class="c-work__image">
+          <img src="<%= url.src %>" alt="Photos & Movie" >
+          <div class="c-work__zoom">
+            <img
+              class="c-work__zoomin"
+              src="./assets/img/zoom_in.svg"
+              alt="Photos & Movie"
+            >
+            <span class="c-work__zoomtitle">PICK UP</span>
           </div>
         </div>
+        <%})%> <%} %>
       </div>
     </div>
-    <div class="c-work__photos">
-        <p class="c-work__photosheading">Photos & Movie</p>
-        <h3 class="c-work__subheading2">私たちの仕事内容の一部を<br class="is-sp">動画と写真でお伝えします。</h3>
-        <div class="c-work__content">
-          <div class="c-work__movie">
-            <video src="./assets/movies/movie.mp4"></video>
-          </div>
-          <div class="c-work__images">
-            <% if (typeof workImages != 'undefined') { %> 
-                <% workImages && workImages.url.forEach(url=> { %>
-                  <div class="c-work__image">
-                    <img src="<%= url.src %>" alt="Photos & Movie" >
-                    <div class="c-work__zoom">
-                      <img class="c-work__zoomin" src="./assets/img/zoom_in.svg" alt="Photos & Movie">
-                      <span class="c-work__zoomtitle">PICK UP</span>
-                    </div>
-                  </div><%})%> 
-                <%}
-             %>
-          </div> 
+  </div>
+  <div class="c-work__photomodal is-close">
+    <div class="c-work__photomodalmain">
+      <div class="c-work__photomodalimage">
+        <img class="c-work__pimage" src="./assets/img/modal-1.jpg" alt="" >
+      </div>
+      <div class="c-button c-work__modalclose">
+        <div class="c-button__icon">
+          <img src="./assets/img/close.svg" alt="" >
         </div>
-    </div>
-    <div class="c-work__photomodal is-close">
-      <div class="c-work__photomodalmain">
-        <div class="c-work__photomodalimage">
-          <img class="c-work__pimage" src="./assets/img/modal-1.jpg" alt="">
-        </div>
-        <div class="c-button c-work__modalclose">
-          <div class="c-button__icon">
-            <img src="./assets/img/close.svg" alt="">
-          </div>
-            <span class="c-button__text">閉じる</span>
-        </div>
+        <span class="c-button__text">閉じる</span>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

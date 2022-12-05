@@ -7,7 +7,7 @@ navi
 .c-recruit {
   max-width: 960px;
   margin: 0 auto;
-  padding-bottom: 62px;
+  padding-bottom: 63px;
   @include tab {
     max-width: 729px;
     padding-bottom: 66px;
@@ -63,22 +63,11 @@ navi
   .c-recruit__tab {
     width: 50%;
     text-align: center;
-    border-top-right-radius: 20px;
     cursor: pointer;
     border: 1px solid #404141;
-    border-left: none;
     font-size: 2.6rem;
     padding: 31px 34px 13px 0;
     font-weight: 400;
-    @include tab {
-      border-top-right-radius: 10px;
-      padding: 13px 34px 4px 0;
-    }
-    @include sp {
-      padding: 15px 0 11px;
-      font-size: 1.6rem;
-      border-top-right-radius: 10px;
-    }
   }
 
   .c-recruit__tab:hover {
@@ -143,12 +132,74 @@ navi
       }
     }
   }
+  .c-recruit__tabcontent2 {
+    background-color: #f2f5f7;
+    padding: 59px 38px 57px;
+    border: 3px solid $gray;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    tr {
+      border-bottom: 1px solid #707070;
+    }
+    th {
+      font-size: 2rem;
+      font-weight: 600;
+      width: 29%;
+      padding-left: 59px;
+      text-align: start;
+      vertical-align: top;
+    }
+    td {
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      width: 71%;
+      line-height: 1.76;
+    }
+    @include tab {
+      padding: 39px 22px 39px 18px;
+      th {
+        font-size: 1.6rem;
+        width: 24.8%;
+        padding-left: 23px;
+      }
+      td {
+        font-size: 1.4rem;
+        letter-spacing: -0.5px;
+        line-height: 2.2;
+      }
+    }
+    @include sp {
+      padding: 14px 7px 39px;
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      th {
+        width: 100%;
+        padding-left: 10px;
+        font-size: 1.6rem;
+      }
+      td {
+        width: 100%;
+        letter-spacing: 0.3px;
+        padding-left: 9px;
+        font-size: 1.4rem;
+        line-height: 1.67;
+      }
+    }
+  }
   .c-recruit__firsttd {
     line-height: 0 !important;
     padding-top: 2px;
   }
   .c-recruit__firsttr {
     border-bottom: 5px solid $primary !important;
+  }
+  .c-recruit__firsttr2 {
+    border-bottom: 5px solid $gray !important;
   }
   .c-recruit__firstrow {
     padding-bottom: 15px !important;
@@ -204,6 +255,12 @@ navi
     justify-content: space-between;
     color: #fff;
     border-radius: 9px;
+    transition: 0.4s;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+      transition: 0.4s;
+    }
     @include tab {
       width: 48.5%;
       font-size: 2rem;
@@ -217,6 +274,7 @@ navi
     }
   }
   .c-recruit__nonstudent {
+    background: #005384;
     @include tab {
       p {
         margin-left: 20px;
@@ -367,21 +425,103 @@ navi
       flex-wrap: wrap;
     }
   }
-  .is-active {
-    background: $primary;
-    width: 58%;
-    color: #fff;
-    border: none;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 32px 0 19px;
-    line-height: 1.7;
+  .c-recruit__tab1{
+    border-top-left-radius: 20px;
     @include tab {
-      padding: 13px 0 7px;
-      width: 59.1%;
+      border-top-left-radius: 10px;
+      padding: 13px 34px 4px 0;
     }
     @include sp {
-      padding: 15px 0 9px;
+      padding: 15px 0 11px;
+      font-size: 1.6rem;
+      border-right: none;
+      border-top-left-radius: 10px;
+      position: relative;
+      border: none;
+      &::after{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 103%;
+        z-index: 0;
+        border: 1px solid #404141;
+        border-right: none;
+        border-bottom: none;
+        border-top-left-radius: 10px;
+      }
+    }
+    &.is-active{
+      background: $primary;
+      width: 58%;
+      color: #fff;
+      border: none;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 32px 0 19px;
+      line-height: 1.7;
+      @include tab {
+        padding: 13px 0 7px;
+        width: 59.1%;
+      }
+      @include sp {
+        padding: 15px 0 9px;
+        &::after{
+          display: none;
+        }
+      }
     }
   }
+  .c-recruit__tab2{
+    border-top-right-radius: 20px;
+    border-left: none;
+    @include tab {
+      border-top-right-radius: 10px;
+      padding: 13px 34px 4px 0;
+    }
+    @include sp {
+      padding: 15px 0 11px;
+      font-size: 1.6rem;
+      border-top-right-radius: 10px;
+      position: relative;
+      border: none;
+      &::after{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 103%;
+        z-index: 0;
+        border: 1px solid #404141;
+        border-left: none;
+        border-bottom: none;
+        border-top-right-radius: 10px;
+      }
+    }
+    &.is-active{
+      background: $gray;
+      width: 58%;
+      color: #fff;
+      border: none;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 32px 0 19px;
+      line-height: 1.7;
+      @include tab {
+        padding: 13px 0 7px;
+        width: 59.1%;
+      }
+      @include sp {
+        padding: 15px 0 9px;
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+
 }

@@ -26,6 +26,9 @@ section {
 .is-open{
   display: block !important;
 }
+.is-hide{
+  display: none !important;
+}
 .is-show {
   display: block;
 }
@@ -139,4 +142,20 @@ section {
   @include sp {
     display: inline-block;
   }
+}
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+.fade-inup{
+  opacity: 0;
+  animation-duration: 1s;
+    animation-fill-mode: both;
+  animation-name: fadeInUp;
 }

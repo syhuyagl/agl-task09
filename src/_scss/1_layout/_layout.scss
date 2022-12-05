@@ -18,7 +18,15 @@ main {
 
 section {
 }
-
+.p-main{
+  margin-top: 78px;
+  @include tab {
+    margin-top: 0;
+  }
+  @include sp {
+    margin-top: 58px;
+  }
+}
 //-------------------------------------------------------
 .l-container {
 }

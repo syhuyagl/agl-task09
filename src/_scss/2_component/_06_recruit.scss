@@ -427,6 +427,7 @@ navi
   }
   .c-recruit__tab1{
     border-top-left-radius: 20px;
+    border-right: none;
     @include tab {
       border-top-left-radius: 10px;
       padding: 13px 34px 4px 0;

@@ -4,17 +4,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 21px;
-  position: relative;
+  padding: 12px 21px;
+  position: fixed;
   background: rgba(255, 255, 255, 0.9);
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  left: 0;
+  top: 0;
+  z-index: 10;
   @include tab {
     flex-wrap: wrap;
     padding: 11px 21px;
+    position: relative;
   }
   @include sp {
-    padding: 9px 10px 0;
+    padding: 6px 10px 0;
   }
   .c-header__logowrapper{
     position: relative;
@@ -181,7 +186,7 @@
   }
   .c-header__submenu {
     position: fixed;
-    top: 7%;
+    top: 6.2%;
     left: 0;
     bottom: 0;
     right: 0;

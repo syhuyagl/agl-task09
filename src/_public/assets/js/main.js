@@ -78,6 +78,11 @@ $(".c-header__firstitem").click(function() {
       scrollTop: $(".c-about").offset().top
   }, 1000);
 });
+$(".c-about__scroll").click(function() {
+  $('html, body').animate({
+      scrollTop: $(".c-about").offset().top
+  }, 1000);
+});
 $(".c-header__seconditem").click(function() {
   $('html, body').animate({
       scrollTop: $(".c-work").offset().top
@@ -91,6 +96,11 @@ $(".c-header__thirditem").click(function() {
 $(".c-header__fourthitem").click(function() {
   $('html, body').animate({
       scrollTop: $(".c-intaview").offset().top
+  }, 1000);
+});
+$('.c-header__assignment').click(function() {
+  $('html, body').animate({
+      scrollTop: $(".c-recruit").offset().top
   }, 1000);
 });
 $(".c-header__fifthitem").click(function() {
@@ -120,3 +130,4 @@ $(window).scroll(function () {
     }, 1000);
    
 });
+

@@ -595,6 +595,7 @@ form
   }
   .c-career__bracket {
     font-size: 1.6rem;
+    font-weight: 300;
     @include tab {
       font-size: 1.6rem;
       letter-spacing: -1px;
@@ -606,6 +607,7 @@ form
   .c-career__bracket2 {
     font-size: 1.6rem;
     letter-spacing: -1px;
+    font-weight: 300;
     @include tab {
       font-size: 1.4rem;
       letter-spacing: -1px;
@@ -616,6 +618,7 @@ form
   }
   .c-career__bracket3 {
     font-size: 1.6rem;
+    font-weight: 300;
     @include tab {
       font-size: 1.6rem;
       letter-spacing: -1px;

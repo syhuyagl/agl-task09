@@ -10,9 +10,10 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  left: 0;
-  top: 0;
+  left: 50%;
   z-index: 10;
+  transform: translateX(-50%);
+  top: 0;
   @include tab {
     flex-wrap: wrap;
     padding: 11px 21px;
@@ -21,6 +22,7 @@
   @include sp {
     padding: 6px 10px 0;
   }
+
   .c-header__logowrapper{
     position: relative;
   }
@@ -34,7 +36,7 @@
     font-weight: 400;
     @include tab {
       left: 47px;
-    top: 34px;
+      top: 34px;
     }
     @include sp {
       font-size: 1rem;
@@ -149,6 +151,7 @@
       margin-top: 9px;
       font-size: 1.6rem;
       padding: 10px 32px 6px;
+      font-weight: 500;
       top: 11px;
       img {
         top: 2px;
@@ -160,6 +163,7 @@
     }
     @include sp {
       font-size: 1.4rem;
+      font-weight: 500;
       margin-top: -1px;
       transform: translateX(0px);
       padding: 8px 16px 9px;

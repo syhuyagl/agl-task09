@@ -1,42 +1,44 @@
 <header class="c-header">
-
-  <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html" class="c-header__logowrapper"><img src="./assets/img/logo.png" alt="Logo"> <span class="c-header__logotitle">Recruitment 2020</span></a></h1>
-  <nav class="c-gnav">
-    <ul>
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <li <% if(link.class) {%>class="c-header__gnavitem u-primary <%=link.class%>" <%}  %>  >
-            <a><%= link.title %></a>
-          </li>
-        <% }) %>
-      <% } %>
-    </ul>
-  </nav>
-  <div class="c-header__spnav">
-    <a href="#" class="c-header__assignment">
-          <img src="./assets/img/assignment.svg" alt="募集要項">
-          <span>募集要項</span>
-    </a>
-    <div class="is-sp c-header__menu">
-      <img class="c-header__menuiconopen is-show"  src="./assets/img/menu.svg" alt="">
-      <img  class="c-header__menuiconclose is-close" src="./assets/img/closemenu.svg" alt="">
+  <div class="c-header__container">
+    <h1 class="c-header__logo"><a href="<%= BASE_URL %>index.html" class="c-header__logowrapper"><img src="./assets/img/logo.png" alt="Logo"> <span class="c-header__logotitle">Recruitment 2020</span></a></h1>
+    <nav class="c-gnav">
+      <ul>
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <li <% if(link.class) {%>class="c-header__gnavitem <%=link.class%>" <%}  %>  >
+              <a><%= link.title %></a>
+            </li>
+          <% }) %>
+        <% } %>
+      </ul>
+    </nav>
+    <div class="c-header__spnav">
+      <a href="#" class="c-header__assignment">
+            <img src="./assets/img/assignment.svg" alt="募集要項">
+            <span>募集要項</span>
+      </a>
+      <div class="is-sp c-header__menu">
+        <img class="c-header__menuiconopen is-show"  src="./assets/img/menu.svg" alt="">
+        <img  class="c-header__menuiconclose is-close" src="./assets/img/closemenu.svg" alt="">
+      </div>
     </div>
-  </div>
-  <div class="c-header__submenu">
-    <div class="c-header__submenuitems">
-      <% if (typeof linklists != 'undefined') { %>
-        <% linklists.main && linklists.main.forEach(link => { %>
-          <a <% if(link.class) {%>class="c-header__submenuitem" <%}  %>  >
-            <img src="./assets/img/play-icon.svg" alt="">
-            <span class="c-header__submenutitle"><%= link.title %></span>
-          </a>
-        <% }) %>
-      <% } %>
+    <div class="c-header__submenu">
+      <div class="c-header__submenuitems">
+        <% if (typeof linklists != 'undefined') { %>
+          <% linklists.main && linklists.main.forEach(link => { %>
+            <a <% if(link.class) {%>class="c-header__submenuitem" <%}  %>  >
+              <img src="./assets/img/play-icon.svg" alt="">
+              <span class="c-header__submenutitle"><%= link.title %></span>
+            </a>
+          <% }) %>
+        <% } %>
+      </div>
+      <a href="#" class="c-header__submenuassignment">
+        <img src="./assets/img/assignment.svg" alt="募集要項">
+        <span>募集要項</span>
+      </a>
     </div>
-    <a href="#" class="c-header__submenuassignment">
-      <img src="./assets/img/assignment.svg" alt="募集要項">
-      <span>募集要項</span>
-    </a>
+    
   </div>
   
 </header>

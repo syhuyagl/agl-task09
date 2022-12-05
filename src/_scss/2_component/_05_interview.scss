@@ -67,6 +67,12 @@ text
       width: 90%;
       margin: 0 auto 47px;
     }
+    &:hover {
+      border: 4px solid $secondary;
+      .c-intaview__cardinfo {
+        background-color: $secondary;
+      }
+    }
   }
   .c-intaview__spcard {
     @include sp {
@@ -532,7 +538,7 @@ text
     justify-content: space-between;
     @include tab {
       flex-direction: column;
-    align-items: center;
+      align-items: center;
     }
     @include sp {
       flex-direction: column;

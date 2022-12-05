@@ -454,6 +454,34 @@ form
       margin-bottom: 15px;
     }
   }
+  .c-career__servicedescriptionitemtitle{
+    font-size: 1.8rem;
+      font-weight: 500;
+      color: $gray;
+      letter-spacing: 0.6px;
+      line-height: 1.66;
+      padding-left: 16px;
+      position: relative;
+      @include sp {
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding-left: 15px;
+      }
+  }
+  .c-career__servicedescriptionitemsubtitle{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $gray;
+    padding-left: 20px;
+    @include tab {
+      font-size: 1.4rem;
+      font-weight: 400;
+    }
+    @include sp {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
   .c-career__servicedescription {
     margin-left: 40px;
     dt {

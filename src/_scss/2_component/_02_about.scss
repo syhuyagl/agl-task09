@@ -72,6 +72,7 @@ title
     color: $primary;
     position: absolute;
     left: 45.8%;
+    transition: 0.4s;
     cursor: pointer;
     top: -57%;
     letter-spacing: 0.3px;
@@ -86,6 +87,10 @@ title
       transform: translateX(-50%);
       top: -55%;
       left: 50%;
+    }
+    &:hover {
+      opacity: 0.7;
+      transition: 0.4s;
     }
   }
   .c-about__heading {
@@ -135,7 +140,7 @@ title
   .c-about__text {
     width: 50%;
     margin-top: 13px;
-    padding-left: 120px;
+    padding-left: 10.1%;
     @include tab {
       width: 60%;
       margin-top: 22px;

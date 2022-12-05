@@ -1,32 +1,34 @@
 /* Header
 ------------------------------------------------------------*/
 .c-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 21px;
   position: fixed;
-  background: rgba(255, 255, 255, 0.9);
-  max-width: 1200px;
+  background: rgba(255, 255, 255, 1);
   width: 100%;
-  margin: 0 auto;
-  left: 50%;
+  left: 0;
   z-index: 10;
-  transform: translateX(-50%);
   top: 0;
-  @include tab {
-    flex-wrap: wrap;
-    padding: 11px 21px;
+ 
+  .c-header__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 21px;
+    @include tab {
+      flex-wrap: wrap;
+      padding: 7px 21px;
+      position: relative;
+    }
+    @include sp {
+      padding: 6px 10px 0;
+    }
+  }
+  .c-header__logowrapper {
     position: relative;
   }
-  @include sp {
-    padding: 6px 10px 0;
-  }
-
-  .c-header__logowrapper{
-    position: relative;
-  }
-  .c-header__logotitle{
+  .c-header__logotitle {
     position: absolute;
     font-size: 1.2rem;
     display: inline-block;
@@ -110,9 +112,10 @@
   .c-header__gnavitem {
     font-size: 1.6rem;
     text-transform: capitalize;
+    color: #0080cc;
   }
   .c-header__gnavitem:hover {
-    cursor: pointer;  
+    cursor: pointer;
     a {
       border-bottom: 2px solid $primary;
       padding-bottom: 6px;
@@ -124,7 +127,7 @@
       padding-bottom: 6px;
     }
   }
- 
+
   .c-header__assignment {
     margin-top: 6px;
     transform: translateX(1px);
@@ -148,11 +151,12 @@
     @include tab {
       position: absolute;
       right: 21px;
-      margin-top: 9px;
+      margin-top: 5px;
       font-size: 1.6rem;
       padding: 10px 32px 6px;
       font-weight: 500;
       top: 11px;
+
       img {
         top: 2px;
         left: -6px;
@@ -190,13 +194,12 @@
   }
   .c-header__submenu {
     position: fixed;
-    top: 6.2%;
+    top: 4.7%;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 100;
     background-color: rgba($color: #fff, $alpha: 0.9);
-    max-height: 957px;
     overflow: auto;
     display: none;
   }
@@ -213,7 +216,7 @@
     font-weight: 500;
     color: $primary;
   }
-  .c-header__submenutitle{
+  .c-header__submenutitle {
     display: inline-block;
     margin-left: 10px;
   }
@@ -239,7 +242,6 @@
       font-weight: 500;
       letter-spacing: 1.3px;
       margin-left: 70px;
-  
     }
   }
 }

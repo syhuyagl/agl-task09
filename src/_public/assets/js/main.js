@@ -14,7 +14,7 @@ $(document).ready(function () {
     delay: 200,
     origin: 'bottom'
   });
-  ScrollReveal().reveal('.c-about__content, .c-work__header, .c-work__introcontent, .c-work__photosheading,.c-work__subheading2, .c-work__content, .c-career__heading, .c-career__subheading, .c-career__banner, .c-career__plan, .c-career__service, .c-intaview,  .c-recruit__tabwrapper, .c-recruit__about', )
+  // ScrollReveal().reveal('.c-about__content, .c-work__header, .c-work__introcontent, .c-work__photosheading,.c-work__subheading2, .c-work__content, .c-career__heading, .c-career__subheading, .c-career__banner, .c-career__plan, .c-career__service, .c-intaview,  .c-recruit__tabwrapper, .c-recruit__about', )
 });
 
 

@@ -5,15 +5,34 @@ title
 /*
 ------------------------------------------------------------*/
 .c-about {
-  background: linear-gradient(90deg, #0080cc 76.7%, #fff 23.3%);
   padding-bottom: 122px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 76.7%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: #0080cc;
+    z-index: -1;
+    max-width: 1314px;
+  }
   @include tab {
     background: linear-gradient(90deg, #0080cc 86.9%, #fff 14.1%);
     padding-bottom: 72px;
+    &::after {
+      display: none;
+    }
   }
+ 
   @include sp {
     background: linear-gradient(90deg, #0080cc 97.3%, #fff 12.7%);
     padding-bottom: 54px;
+    &::after {
+      display: none;
+    }
   }
   .c-about__title {
     max-width: 960px;
@@ -76,6 +95,7 @@ title
     cursor: pointer;
     top: -57%;
     letter-spacing: 0.3px;
+   
     @include tab {
       transform: translateX(-50%);
       top: -87%;
@@ -168,8 +188,9 @@ title
   }
 
   .c-about__content {
-    margin-top: 4px;
     display: flex;
+    max-width: 1200px;
+    margin: 4px auto 0;
     @include sp {
       margin-top: -33px;
       margin-left: 20px;
@@ -179,6 +200,7 @@ title
 
   .c-about__image1 {
     position: relative;
+    z-index: 1;
     @include tab {
       transform: translate(-23px, -9px);
     }
@@ -214,6 +236,8 @@ title
   .c-about__image2 {
     position: relative;
     margin-top: 44px;
+    z-index: 1;
+
     @include tab {
       transform: translate(-23px, -9px);
     }

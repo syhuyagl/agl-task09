@@ -8,33 +8,82 @@ btn
   width: 100%;
   margin-top: 3px;
   position: relative;
+  height: 87vh;
+  min-height: 768px;
   @include tab {
     margin-top: -4px;
+    height: 90vh;
+  }
+  @include sp{
+    height: 68vh;
+    min-height: 605px;
   }
   .c-mainvisual__slider {
     width: 100%;
-    img {
-      width: 100%;
-    max-height:888px;
-
+    height: 100%;
+  }
+  .c-mainvisual__slide1 {
+    background-image: url("../../assets/img/slider-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    animation-fill-mode: forwards;
+    @include tab {
+      background-image: url("../../assets/img/slider-tab.jpg");
+    }
+    @include sp {
+      background-image: url("../../assets/img/slider-sp.jpg");
     }
   }
-  .slick-slide {
-    img {
-      width: 100%;
-     
+  .c-mainvisual__slide2 {
+    background-image: url("../../assets/img/slider-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 100%;
+    animation-fill-mode: forwards;
+    @include tab {
+      background-image: url("../../assets/img/slider-tab.jpg");
     }
+    @include sp {
+      background-image: url("../../assets/img/slider-sp.jpg");
+    }
+  }
+  .c-mainvisual__slide3 {
+    background-image: url("../../assets/img/slider-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+    animation-fill-mode: forwards;
+    @include tab {
+      background-image: url("../../assets/img/slider-tab.jpg");
+    }
+    @include sp {
+      background-image: url("../../assets/img/slider-sp.jpg");
+    }
+  }
+  .slick-list{
+    height: 100%;
+  }
+  .slick-track{
+    height: 100%;
+  }
+  .slick-slide {
     .c-mainvisual__slide1 {
       transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
       transform: scale(1);
     }
     .c-mainvisual__slide2 {
       transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
-      transform: translateY(-3%);
+      transform: scale(1.2);
     }
     .c-mainvisual__slide3 {
       transition: all 3s cubic-bezier(0.48, 0.41, 0.61, 0.73);
-      transform: translateX(-3%);
+      transform: scale(1.2);
     }
     @include tab {
       img {
@@ -52,10 +101,10 @@ btn
       transform: scale(1.2)
     }
     .c-mainvisual__slide2 {
-      transform: translateY(0);
+      animation: toptobottom 50s infinite linear;
     }
     .c-mainvisual__slide3 {
-      transform: translateX(0);
+      animation: lefttoright 50s infinite linear;
     }
   }
   
@@ -109,5 +158,76 @@ btn
     width: fit-content;
     padding-left: 8px;
     background-color: $primary;
+  }
+  @keyframes imageZoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      transform: scale(1);
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: scale(1.25);
+      transform: scale(1.25);
+      transform: scale(1.25);
+    }
+  }
+  @keyframes toptobottom {
+    0% {
+      transform: scale(1.2) translateY(0);
+    }
+    10% {
+      opacity: 1;
+      transform: scale(1.2) translateY(3%);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1.2) translateY(8%);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2) translateY(10%);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(1.2) translateY(15%);
+    }
+    100% {
+      transform: translateY(100%);
+      transition: -webkit-transform 6s ease-out;
+      transition: transform 6s ease-out;
+      transition: transform 6s ease-out, -webkit-transform 6s ease-out;
+    }
+  }
+  @keyframes lefttoright {
+    0% {
+      transform: scale(1.2) translatex(0);
+    }
+    10% {
+      opacity: 1;
+      transform: scale(1.2) translatex(3%);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(1.2) translatex(8%);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2) translatex(10%);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(1.2) translatex(15%);
+    }
+    100% {
+      transform: translatex(100%);
+      transition: -webkit-transform 6s ease-out;
+      transition: transform 6s ease-out;
+      transition: transform 6s ease-out, -webkit-transform 6s ease-out;
+    }
   }
 }

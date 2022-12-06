@@ -5,7 +5,7 @@ icon
 /*
 ------------------------------------------------------------*/
 .c-work {
-  padding-top: 93px;
+  padding-top: 95px;
   @include tab {
     padding-top: 61px;
   }
@@ -67,6 +67,7 @@ icon
     margin-top: 60px;
     width: 90%;
     margin-left: auto;
+    max-width: 1439px;
     @include tab {
       width: 97.4%;
       margin-top: 34px;

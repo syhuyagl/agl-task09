@@ -22,9 +22,12 @@ $(".c-header__menu").click(function () {
   if ($(".c-header__menuiconopen").hasClass("is-show")) {
     $(".c-header__menuiconopen").removeClass("is-show").addClass("is-close");
     $(".c-header__menuiconclose").removeClass("is-close").addClass("is-show");
+    $('.c-header__container').get(0).style.setProperty('--show', 'block')
   } else {
     $(".c-header__menuiconclose").addClass("is-close").removeClass("is-show");
     $(".c-header__menuiconopen").addClass("is-show").removeClass("is-close");
+    $('.c-header__container').get(0).style.setProperty('--show', 'none')
+
   }
   $(".c-header__submenu").toggleClass("is-open");
   $("body").toggleClass("is-fixed");

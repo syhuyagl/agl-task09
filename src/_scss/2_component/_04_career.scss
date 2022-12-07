@@ -5,12 +5,12 @@ form
 /*
 ------------------------------------------------------------*/
 .c-career {
-  margin-top: 92px;
+  padding-top: 92px;
   @include tab {
-    margin-top: 60px;
+    padding-top: 60px;
   }
   @include sp {
-    margin-top: 40px;
+    padding-top: 40px;
   }
   .c-career__heading {
     font-size: 3.4rem;
@@ -429,8 +429,13 @@ form
     }
   }
   .c-career__serviceimage {
+    min-width: 400px;
+    @include tab{
+      min-width: 288px;
+    }
     @include sp {
       width: 49%;
+      min-width: 0px;
       img {
         height: 100%;
         width: 100%;
@@ -486,8 +491,7 @@ form
       font-size: 1.6rem;
       font-weight: 600;
       padding-left: 15px;
-    letter-spacing: 0px;
-
+      letter-spacing: 0px;
     }
   }
   .c-career__servicedescriptionitemsubtitle {
@@ -628,7 +632,7 @@ form
       margin-bottom: 10px;
     }
     @include sp {
-      margin-bottom: 13px;
+      margin-bottom: 12px;
     }
   }
   .c-career__dt6 {
@@ -687,8 +691,9 @@ form
     }
     @include sp {
       padding-left: 11px !important;
-      padding-bottom: 7px;
-      letter-spacing: 2.3px;
+      padding-bottom: 4px;
+      letter-spacing: 0.3px;
+      font-size: 1.4rem;
     }
   }
   .c-career__ddnodot {

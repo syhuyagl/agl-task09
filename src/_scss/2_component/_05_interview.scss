@@ -11,15 +11,15 @@ text
     color: $primary;
     text-align: center;
     letter-spacing: 3.2px;
-    margin-top: 90px;
+    padding-top: 90px;
     @include tab {
       font-size: 3rem;
       letter-spacing: -3.7px;
-      margin-top: 56px;
+      padding-top: 56px;
     }
     @include sp {
       font-size: 2.4rem;
-      margin-top: 32px;
+      padding-top: 41px;
       letter-spacing: 1px;
     }
   }
@@ -36,7 +36,7 @@ text
     }
     @include sp {
       font-size: 1.4rem;
-      margin-top: 8px;
+      margin-top: 10px;
       line-height: 1.6;
     }
   }
@@ -352,6 +352,7 @@ text
     @include sp {
       flex-direction: column;
       margin: 34px auto 0;
+      max-width: 355px;
     }
   }
   .c-intaview__representlogo {
@@ -375,6 +376,7 @@ text
       margin-top: 25px;
       margin-left: 9px;
       width: 83.3%;
+      min-width: 290px;
     }
   }
   .c-intaview__representcontactitem {
@@ -484,7 +486,7 @@ text
     &:hover {
       &::after {
         transition: 0.4s;
-        opacity: 0.6;
+        opacity: 0.74;
       }
       .c-intaview__zoom {
         transform: translate(-50%, -50%);

@@ -20,7 +20,8 @@
     position: relative;
     @include tab {
       flex-wrap: wrap;
-      padding: 7px 21px;
+      padding: 10px 21px;
+
       position: relative;
     }
     @include sp {
@@ -86,6 +87,9 @@
     @include tab {
       margin-left: 19px;
     }
+    @include sp {
+      margin-left: 0;
+    }
   }
   .c-header__seconditem {
     margin-left: -7px;
@@ -93,13 +97,21 @@
     @include tab {
       transform: translateX(-5px);
     }
+    @include sp {
+      margin-left: 0;
+      transform: translateX(0);
+    }
   }
   .c-header__thirditem {
     margin-left: 20px;
     @include tab {
       margin-left: -13px;
     }
+    @include sp {
+      margin-left: 0;
+    }
   }
+
   .c-header__fourthitem {
     @include tab {
       transform: translateX(-8px);
@@ -120,7 +132,7 @@
     @include sp {
       width: 122px;
       transform: translateY(5px);
-      padding-bottom: 7px;
+      padding-bottom: 17px;
     }
   }
 
@@ -162,11 +174,13 @@
     span {
       display: inline-block;
       letter-spacing: 2.3px;
+    font-weight: 500;
+
     }
     @include tab {
       position: absolute;
       right: 21px;
-      margin-top: 5px;
+      margin-top: 7px;
       font-size: 1.6rem;
       padding: 10px 32px 6px;
       font-weight: 500;

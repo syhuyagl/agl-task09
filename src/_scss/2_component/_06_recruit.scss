@@ -13,22 +13,21 @@ navi
     padding-bottom: 66px;
   }
   @include sp {
-    max-width: 355px;
-    padding-bottom: 73px;
+    padding: 0 10px 73px 10px;
   }
   .c-recruit__firstheading {
     text-align: center;
     font-size: 4.4rem;
     color: $primary;
     font-weight: 500;
-    margin-top: 91px;
+    padding-top: 91px;
     letter-spacing: 3.4px;
     @include tab {
-      margin-top: 58px;
+      padding-top: 58px;
     }
     @include sp {
       font-size: 2.4rem;
-      margin-top: 37px;
+      padding-top: 37px;
       letter-spacing: 1.4px;
     }
   }
@@ -54,7 +53,7 @@ navi
     margin-top: 54px;
     align-items: flex-end;
     @include tab {
-      margin-top: 28px;
+      margin-top: 29px;
     }
     @include sp {
       margin-top: 32px;
@@ -68,6 +67,11 @@ navi
     font-size: 2.6rem;
     padding: 31px 34px 13px 0;
     font-weight: 400;
+    &.is-active {
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
   .c-recruit__tab:hover {
@@ -80,6 +84,7 @@ navi
     table {
       width: 100%;
       border-collapse: collapse;
+      color: #0b0b0b;
     }
     tr {
       border-bottom: 1px solid #707070;
@@ -133,12 +138,13 @@ navi
     }
   }
   .c-recruit__tabcontent2 {
-    background-color: #f2f5f7;
+    background-color: #f8f8f8;
     padding: 59px 38px 57px;
     border: 3px solid $gray;
     table {
       width: 100%;
       border-collapse: collapse;
+      color: #0b0b0b;
     }
     tr {
       border-bottom: 1px solid #707070;
@@ -196,10 +202,10 @@ navi
     padding-top: 2px;
   }
   .c-recruit__firsttr {
-    border-bottom: 5px solid $primary !important;
+    border-bottom: 4px solid $primary !important;
   }
   .c-recruit__firsttr2 {
-    border-bottom: 5px solid $gray !important;
+    border-bottom: 4px solid $gray !important;
   }
   .c-recruit__firstrow {
     padding-bottom: 15px !important;
@@ -257,7 +263,7 @@ navi
     border-radius: 9px;
     transition: 0.4s;
     cursor: pointer;
-    &:hover{
+    &:hover {
       opacity: 0.7;
       transition: 0.4s;
     }
@@ -271,6 +277,8 @@ navi
       font-size: 1.8rem;
       margin: 0 auto;
       padding: 13px 21px 11px;
+      max-width: 301px;
+      min-width: 282px;
     }
   }
   .c-recruit__nonstudent {
@@ -279,7 +287,8 @@ navi
       p {
         margin-left: 20px;
         letter-spacing: -1.5px;
-        transform: translateY(4px);
+
+        transform: translateY(0px);
       }
     }
     @include sp {
@@ -313,7 +322,7 @@ navi
     @include tab {
       margin-left: 44px;
       letter-spacing: -2px;
-      transform: translateY(3px);
+      transform: translateY(0px);
     }
     @include sp {
       margin-left: 38px;
@@ -331,14 +340,14 @@ navi
     font-size: 4.4rem;
     color: $primary;
     font-weight: 500;
-    margin-top: 91px;
+    padding-top: 91px;
     letter-spacing: 3.4px;
     @include tab {
-      margin-top: 59px;
+      padding-top: 59px;
     }
     @include sp {
       font-size: 2.4rem;
-      margin-top: 57px;
+      padding-top: 57px;
       letter-spacing: 1.4px;
     }
   }
@@ -426,7 +435,10 @@ navi
       flex-wrap: wrap;
     }
   }
-  .c-recruit__tab1{
+  .c-recruit__abouttrsp:last-child {
+    border-bottom: none;
+  }
+  .c-recruit__tab1 {
     border-top-left-radius: 20px;
     border-right: none;
     @include tab {
@@ -440,7 +452,7 @@ navi
       border-top-left-radius: 10px;
       position: relative;
       border: none;
-      &::after{
+      &::after {
         position: absolute;
         left: 0px;
         top: 0px;
@@ -455,7 +467,7 @@ navi
         border-top-left-radius: 10px;
       }
     }
-    &.is-active{
+    &.is-active {
       background: $primary;
       width: 58%;
       color: #fff;
@@ -470,13 +482,13 @@ navi
       }
       @include sp {
         padding: 15px 0 9px;
-        &::after{
+        &::after {
           display: none;
         }
       }
     }
   }
-  .c-recruit__tab2{
+  .c-recruit__tab2 {
     border-top-right-radius: 20px;
     border-left: none;
     @include tab {
@@ -489,7 +501,7 @@ navi
       border-top-right-radius: 10px;
       position: relative;
       border: none;
-      &::after{
+      &::after {
         position: absolute;
         right: 0px;
         top: 0px;
@@ -504,7 +516,7 @@ navi
         border-top-right-radius: 10px;
       }
     }
-    &.is-active{
+    &.is-active {
       background: $gray;
       width: 58%;
       color: #fff;
@@ -519,11 +531,13 @@ navi
       }
       @include sp {
         padding: 15px 0 9px;
-        &::after{
+        &::after {
           display: none;
         }
       }
     }
   }
-
+  .c-recruit__lastth{
+    line-height: 2;
+  }
 }

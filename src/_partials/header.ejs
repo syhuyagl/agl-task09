@@ -1,6 +1,6 @@
 <header class="c-header">
   <div class="c-header__container">
-    <h1 class="c-header__logo"><a href="./index.html" class="c-header__logowrapper"><img src="./assets/img/logo.png" alt="Logo"> <span class="c-header__logotitle">Recruitment 2020</span></a></h1>
+    <div class="c-header__logo"><a href="./index.html" class="c-header__logowrapper"><img src="./assets/img/logo.png" alt="Logo"> <span class="c-header__logotitle">Recruitment 2020</span></a></div>
     <nav class="c-gnav">
       <ul>
         <% if (typeof linklists != 'undefined') { %>
@@ -26,7 +26,7 @@
       <div class="c-header__submenuitems">
         <% if (typeof linklists != 'undefined') { %>
           <% linklists.main && linklists.main.forEach(link => { %>
-            <a <% if(link.class) {%>class="c-header__submenuitem" <%}  %>  >
+            <a <% if(link.class) {%>class="c-header__submenuitem <%=link.class%>" <%}  %>  >
               <img src="./assets/img/play-icon.svg" alt="">
               <span class="c-header__submenutitle"><%= link.title %></span>
             </a>

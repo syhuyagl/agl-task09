@@ -19,7 +19,7 @@ text
     }
     @include sp {
       font-size: 2.4rem;
-      padding-top: 41px;
+      padding-top: 30px;
       letter-spacing: 1px;
     }
   }
@@ -60,6 +60,7 @@ text
     width: 32.6%;
     border: 4px solid $primary;
     position: relative;
+    cursor: pointer;
     @include tab {
       width: 31.4%;
     }
@@ -103,6 +104,7 @@ text
       left: 50%;
       transform: translateX(-50%);
       bottom: -16.7%;
+      width: 90%;
     }
   }
   .c-intaview__playicon {
@@ -524,6 +526,7 @@ text
   .c-intaview__modalmain {
     max-width: 960px;
     margin: 80px auto;
+    background:#fff;
     border: 4px solid $primary;
     padding: 48px 57px;
     @include tab {

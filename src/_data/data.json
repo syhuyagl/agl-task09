@@ -107,7 +107,8 @@
       {
         "src": "./assets/img/service-3.png",
         "srcSp": "./assets/img/service-3-sp.jpg",
-        "srcTab": "./assets/img/service-3-tab.jpg"
+        "srcTab": "./assets/img/service-3-tab.jpg",
+        "class": "c-career__fiximage"
       },
       {
         "src": "./assets/img/service-4.png",

@@ -13,7 +13,7 @@ navi
     padding-bottom: 66px;
   }
   @include sp {
-    padding: 0 10px 73px 10px;
+    padding: 0 10px 76px 10px;
   }
   .c-recruit__firstheading {
     text-align: center;
@@ -237,10 +237,16 @@ navi
       padding-bottom: 10px;
     }
   }
+  .c-recruit__assignmenticon{
+    margin-left: 2px;
+    @include sp {
+      margin-left: 0;
+    }
+  }
   .c-recruit__tableactions {
     display: flex;
     max-width: 742px;
-    margin: 44px auto 0;
+    margin: 46px auto 0;
     justify-content: space-between;
     @include tab {
       max-width: 619px;
@@ -413,9 +419,9 @@ navi
       th {
         width: 100%;
         padding-left: 8px;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding-top: 12px;
-        padding-bottom: 9px;
+        padding-bottom: 11px;
         border-bottom: 1px solid #cbcbcb;
       }
       td {
@@ -538,6 +544,8 @@ navi
     }
   }
   .c-recruit__lastth{
-    line-height: 2;
+    @include tab {
+      line-height: 2;
+    }
   }
 }

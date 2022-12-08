@@ -407,13 +407,16 @@ form
     width: 90%;
     margin-left: auto;
     max-width: 1439px;
+    padding-right: 15px;
     @include tab {
       width: 97.4%;
+      padding-right: 0;
     }
     @include sp {
       flex-direction: column;
       margin-top: 42px;
       width: 97%;
+      padding-right: 0;
     }
   }
   .c-career__serviceimages {
@@ -430,7 +433,7 @@ form
   }
   .c-career__serviceimage {
     min-width: 400px;
-    @include tab{
+    @include tab {
       min-width: 288px;
     }
     @include sp {
@@ -534,7 +537,7 @@ form
         font-weight: 400;
       }
       @include sp {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         font-weight: 400;
       }
     }
@@ -706,6 +709,15 @@ form
       padding-left: 24px !important;
       letter-spacing: 2.1px;
       margin-bottom: 8px;
+    }
+  }
+  .c-career__serviceimage:nth-child(3) {
+    margin-top: -1px;
+    @include tab {
+      margin-top: 0;
+    }
+    @include sp {
+      margin-top: 0;
     }
   }
 }

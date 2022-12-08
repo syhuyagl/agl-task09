@@ -10,13 +10,31 @@ $(document).ready(function () {
   ScrollReveal({
     reset: false,
     distance: "25px",
-    duration: 1300,
-    delay: 200,
+    duration: 1100,
     origin: "bottom",
   });
-  ScrollReveal().reveal('.c-about__content, .c-work__header, .c-work__introcontent, .c-work__photosheading,.c-work__subheading2, .c-work__content, .c-career__heading, .c-career__subheading, .c-career__banner, .c-career__plan, .c-career__service, .c-intaview,  .c-recruit__tabwrapper, .c-recruit__about', )
+  ScrollReveal().reveal(
+    ".c-about__content, .c-work__header, .c-work__introcontent, .c-work__photosheading,.c-work__subheading2, .c-work__content, .c-career__heading, .c-career__subheading, .c-career__banner, .c-career__plan, .c-career__service, .c-intaview,  .c-recruit__tabwrapper, .c-recruit__about"
+  );
 });
-
+function enableModal() {
+  const $body = document.querySelector("body");
+  let scrollPosition = 0;
+  scrollPosition = window.pageYOffset;
+  $body.style.overflow = "hidden";
+  $body.style.position = "fixed";
+  $body.style.top = `-${scrollPosition}px`;
+  $body.style.width = "100%";
+}
+function closeModal() {
+  const $body = document.querySelector("body");
+  let scrollPosition = 0;
+  $body.style.removeProperty("overflow");
+  $body.style.removeProperty("position");
+  $body.style.removeProperty("top");
+  $body.style.removeProperty("width");
+  window.scrollTo(0, scrollPosition);
+}
 function toggleMenu() {
   $(".c-header__menuiconclose").addClass("is-close").removeClass("is-show");
   $(".c-header__menuiconopen").addClass("is-show").removeClass("is-close");
@@ -42,11 +60,13 @@ $(".c-gnav li").click(function () {
 });
 $(".c-work__modalclose").click(function () {
   $(".c-work__photomodal").addClass("is-close");
-  $("body").removeClass("is-fixed");
+  closeModal()
+  // $("body").removeClass("is-fixed");
 });
 $(".c-work__image").click(function () {
   $(".c-work__photomodal").removeClass("is-close");
-  $("body").addClass("is-fixed");
+  // $("body").addClass("is-fixed");
+  enableModal()
 });
 $(".c-intaview__modalbutton").click(function () {
   $(".c-intaview__modal").addClass("is-close");
@@ -79,66 +99,137 @@ $(".c-recruit__tab1").click(function () {
   $(".c-recruit__tab2").removeClass("is-active");
 });
 $(".c-header__firstitem").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-about").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-about").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-about").offset().top,
+      },
+      1000
+    );
+  }
   toggleMenu();
 });
 $(".c-about__scroll").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-about").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-about").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-about").offset().top,
+      },
+      1000
+    );
+  }
   toggleMenu();
 });
 $(".c-header__seconditem").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-work").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-work").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-work").offset().top,
+      },
+      1000
+    );
+  }
+
   toggleMenu();
 });
 $(".c-header__thirditem").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-career").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-career").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-career").offset().top,
+      },
+      1000
+    );
+  }
   toggleMenu();
 });
 $(".c-header__fourthitem").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-intaview").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-intaview").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-intaview").offset().top,
+      },
+      1000
+    );
+  }
   toggleMenu();
 });
 $(".c-header__assignment").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-recruit").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-recruit").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-recruit").offset().top,
+      },
+      1000
+    );
+  }
   toggleMenu();
 });
 $(".c-header__fifthitem").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".c-recruit__secondheading").offset().top,
-    },
-    1000
-  );
+  var windowWidth = $(window).width();
+  if (windowWidth > 767 && windowWidth < 1024) {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-recruit__secondheading").offset().top - 123,
+      },
+      1000
+    );
+  } else {
+    $("html, body").animate(
+      {
+        scrollTop: $(".c-recruit__secondheading").offset().top,
+      },
+      1000
+    );
+  }
   toggleMenu();
 });
 $(".c-recruit__tab2").click(function () {
